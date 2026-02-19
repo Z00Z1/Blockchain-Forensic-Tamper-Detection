@@ -1,0 +1,9 @@
+{
+    "evidence_id": "EV-9f991d23",
+    "file_name": "sample_evidence.txt",
+    "hash_sha256": "0d382e94c75b22a51f4facc387b7603f36259fc1b4bb4381df5e89b6d7de2f68",
+    "collector": "Investigator A",
+    "timestamp": "2026-02-15T13:11:03.642305",
+    "case_id": "CASE-2026-01",
+    "description": "Test evidence file"
+}

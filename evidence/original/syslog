@@ -1,0 +1,922 @@
+2026-02-15T05:36:46.837140+00:00 ubuntu rsyslogd: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="931" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
+2026-02-15T05:36:46.876683+00:00 ubuntu systemd[1]: logrotate.service: Deactivated successfully.
+2026-02-15T05:36:46.878751+00:00 ubuntu systemd[1]: Finished logrotate.service - Rotate log files.
+2026-02-15T05:36:46.878876+00:00 ubuntu systemd[1]: logrotate.service: Consumed 1.077s CPU time, 3.3M memory peak, 0B memory swap peak.
+2026-02-15T05:36:46.952562+00:00 ubuntu systemd[1]: Created slice user-120.slice - User Slice of UID 120.
+2026-02-15T05:36:46.956934+00:00 ubuntu systemd[1]: Starting user-runtime-dir@120.service - User Runtime Directory /run/user/120...
+2026-02-15T05:36:47.005899+00:00 ubuntu systemd[1]: Finished user-runtime-dir@120.service - User Runtime Directory /run/user/120.
+2026-02-15T05:36:47.027489+00:00 ubuntu systemd[1]: Starting user@120.service - User Manager for UID 120...
+2026-02-15T05:36:47.423833+00:00 ubuntu systemd[1308]: Queued start job for default target default.target.
+2026-02-15T05:36:47.445875+00:00 ubuntu systemd[1308]: Created slice app.slice - User Application Slice.
+2026-02-15T05:36:47.446411+00:00 ubuntu systemd[1308]: Created slice session.slice - User Core Session Slice.
+2026-02-15T05:36:47.447646+00:00 ubuntu systemd[1308]: Started ubuntu-report.path - Pending report trigger for Ubuntu Report.
+2026-02-15T05:36:47.447777+00:00 ubuntu systemd[1308]: Started launchpadlib-cache-clean.timer - Clean up old files in the Launchpadlib cache.
+2026-02-15T05:36:47.448319+00:00 ubuntu systemd[1308]: Started snap.firmware-updater.firmware-notifier.timer - Timer firmware-notifier for snap application firmware-updater.firmware-notifier.
+2026-02-15T05:36:47.448375+00:00 ubuntu systemd[1308]: Reached target paths.target - Paths.
+2026-02-15T05:36:47.448399+00:00 ubuntu systemd[1308]: Reached target timers.target - Timers.
+2026-02-15T05:36:47.450212+00:00 ubuntu systemd[1308]: Starting dbus.socket - D-Bus User Message Bus Socket...
+2026-02-15T05:36:47.450349+00:00 ubuntu systemd[1308]: Listening on dirmngr.socket - GnuPG network certificate management daemon.
+2026-02-15T05:36:47.450374+00:00 ubuntu systemd[1308]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+2026-02-15T05:36:47.450993+00:00 ubuntu systemd[1308]: Listening on gnome-keyring-daemon.socket - GNOME Keyring daemon.
+2026-02-15T05:36:47.451040+00:00 ubuntu systemd[1308]: Listening on gpg-agent-browser.socket - GnuPG cryptographic agent and passphrase cache (access for web browsers).
+2026-02-15T05:36:47.451061+00:00 ubuntu systemd[1308]: Listening on gpg-agent-extra.socket - GnuPG cryptographic agent and passphrase cache (restricted).
+2026-02-15T05:36:47.455678+00:00 ubuntu systemd[1308]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+2026-02-15T05:36:47.457742+00:00 ubuntu systemd[1308]: Listening on gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.
+2026-02-15T05:36:47.457860+00:00 ubuntu systemd[1308]: Listening on keyboxd.socket - GnuPG public key management service.
+2026-02-15T05:36:47.458723+00:00 ubuntu systemd[1308]: Listening on pipewire-pulse.socket - PipeWire PulseAudio.
+2026-02-15T05:36:47.458820+00:00 ubuntu systemd[1308]: Listening on pipewire.socket - PipeWire Multimedia System Sockets.
+2026-02-15T05:36:47.460483+00:00 ubuntu systemd[1308]: Listening on pk-debconf-helper.socket - debconf communication socket.
+2026-02-15T05:36:47.460546+00:00 ubuntu systemd[1308]: Listening on snapd.session-agent.socket - REST API socket for snapd user session agent.
+2026-02-15T05:36:47.460565+00:00 ubuntu systemd[1308]: Listening on speech-dispatcher.socket - Speech Dispatcher Socket.
+2026-02-15T05:36:47.478284+00:00 ubuntu systemd[1308]: Listening on dbus.socket - D-Bus User Message Bus Socket.
+2026-02-15T05:36:47.505924+00:00 ubuntu systemd[1308]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+2026-02-15T05:36:47.506079+00:00 ubuntu systemd[1308]: Reached target sockets.target - Sockets.
+2026-02-15T05:36:47.506101+00:00 ubuntu systemd[1308]: Reached target basic.target - Basic System.
+2026-02-15T05:36:47.506119+00:00 ubuntu systemd[1308]: gnome-initial-setup-copy-worker.service - GNOME Initial Setup Copy Worker was skipped because of an unmet condition check (ConditionUser=!@system).
+2026-02-15T05:36:47.506706+00:00 ubuntu systemd[1]: Started user@120.service - User Manager for UID 120.
+2026-02-15T05:36:47.517198+00:00 ubuntu systemd[1308]: Started pipewire.service - PipeWire Multimedia Service.
+2026-02-15T05:36:47.530429+00:00 ubuntu systemd[1]: Started session-c1.scope - Session c1 of User gdm.
+2026-02-15T05:36:47.536856+00:00 ubuntu systemd[1308]: Started filter-chain.service - PipeWire filter chain daemon.
+2026-02-15T05:36:47.541430+00:00 ubuntu systemd[1308]: Started snap.snapd-desktop-integration.snapd-desktop-integration.service - Service for snap application snapd-desktop-integration.snapd-desktop-integration.
+2026-02-15T05:36:47.550444+00:00 ubuntu systemd[1308]: Started wireplumber.service - Multimedia Service Session Manager.
+2026-02-15T05:36:47.559274+00:00 ubuntu systemd[1308]: Started pipewire-pulse.service - PipeWire PulseAudio.
+2026-02-15T05:36:47.562256+00:00 ubuntu systemd[1308]: Reached target default.target - Main User Target.
+2026-02-15T05:36:47.563864+00:00 ubuntu systemd[1308]: Startup finished in 504ms.
+2026-02-15T05:36:47.617168+00:00 ubuntu systemd[1308]: Starting dbus.service - D-Bus User Message Bus...
+2026-02-15T05:36:47.786344+00:00 ubuntu ModemManager[1143]: <msg> [base-manager] couldn't check support for device '/sys/devices/pci0000:00/0000:00:03.0': not supported by any plugin
+2026-02-15T05:36:47.826038+00:00 ubuntu avahi-daemon[674]: Joining mDNS multicast group on interface enp0s3.IPv6 with address fe80::a00:27ff:fe3d:ca10.
+2026-02-15T05:36:47.862900+00:00 ubuntu avahi-daemon[674]: New relevant interface enp0s3.IPv6 for mDNS.
+2026-02-15T05:36:47.866755+00:00 ubuntu avahi-daemon[674]: Registering new address record for fe80::a00:27ff:fe3d:ca10 on enp0s3.*.
+2026-02-15T05:36:48.023555+00:00 ubuntu kernel: workqueue: once_deferred hogged CPU for >10000us 7 times, consider switching to WQ_UNBOUND
+2026-02-15T05:36:48.165753+00:00 ubuntu dbus-daemon[1331]: [session uid=120 pid=1331] AppArmor D-Bus mediation is enabled
+2026-02-15T05:36:48.166139+00:00 ubuntu systemd[1308]: Started dbus.service - D-Bus User Message Bus.
+2026-02-15T05:36:48.217995+00:00 ubuntu dbus-daemon[675]: [system] Activating via systemd: service name='org.freedesktop.RealtimeKit1' unit='rtkit-daemon.service' requested by ':1.30' (uid=120 pid=1320 comm="/usr/bin/pipewire" label="unconfined")
+2026-02-15T05:36:48.263423+00:00 ubuntu dbus-daemon[1331]: [session uid=120 pid=1331] Activating via systemd: service name='org.freedesktop.portal.Documents' unit='xdg-document-portal.service' requested by ':1.6' (uid=120 pid=1322 comm="/usr/bin/snap run snapd-desktop-integration" label="unconfined")
+2026-02-15T05:36:48.293986+00:00 ubuntu systemd[1]: Starting rtkit-daemon.service - RealtimeKit Scheduling Policy Service...
+2026-02-15T05:36:48.320929+00:00 ubuntu kernel: workqueue: blk_mq_requeue_work hogged CPU for >10000us 11 times, consider switching to WQ_UNBOUND
+2026-02-15T05:36:48.333526+00:00 ubuntu systemd[1308]: Starting xdg-document-portal.service - flatpak document portal service...
+2026-02-15T05:36:48.508379+00:00 ubuntu dbus-daemon[1331]: [session uid=120 pid=1331] Activating via systemd: service name='org.freedesktop.impl.portal.PermissionStore' unit='xdg-permission-store.service' requested by ':1.9' (uid=120 pid=1351 comm="/usr/libexec/xdg-document-portal" label="unconfined")
+2026-02-15T05:36:48.550120+00:00 ubuntu pipewire[1320]: mod.jackdbus-detect: Failed to receive jackdbus reply: org.freedesktop.DBus.Error.ServiceUnknown: The name org.jackaudio.service was not provided by any .service files
+2026-02-15T05:36:48.587658+00:00 ubuntu systemd[1308]: Starting xdg-permission-store.service - sandboxed app permission store...
+2026-02-15T05:36:48.613025+00:00 ubuntu dbus-daemon[675]: [system] Successfully activated service 'org.freedesktop.RealtimeKit1'
+2026-02-15T05:36:48.620923+00:00 ubuntu systemd[1]: Started rtkit-daemon.service - RealtimeKit Scheduling Policy Service.
+2026-02-15T05:36:48.632952+00:00 ubuntu rtkit-daemon[1345]: Successfully called chroot.
+2026-02-15T05:36:48.640445+00:00 ubuntu rtkit-daemon[1345]: Successfully dropped privileges.
+2026-02-15T05:36:48.642935+00:00 ubuntu rtkit-daemon[1345]: Successfully limited resources.
+2026-02-15T05:36:48.642960+00:00 ubuntu rtkit-daemon[1345]: Canary thread running.
+2026-02-15T05:36:48.642976+00:00 ubuntu rtkit-daemon[1345]: Running.
+2026-02-15T05:36:48.642992+00:00 ubuntu rtkit-daemon[1345]: Supervising 0 threads of 0 processes of 0 users.
+2026-02-15T05:36:48.643034+00:00 ubuntu rtkit-daemon[1345]: message repeated 3 times: [ Supervising 0 threads of 0 processes of 0 users.]
+2026-02-15T05:36:48.643047+00:00 ubuntu rtkit-daemon[1345]: Watchdog thread running.
+2026-02-15T05:36:48.658549+00:00 ubuntu rtkit-daemon[1345]: Supervising 0 threads of 0 processes of 0 users.
+2026-02-15T05:36:48.679532+00:00 ubuntu rtkit-daemon[1345]: message repeated 7 times: [ Supervising 0 threads of 0 processes of 0 users.]
+2026-02-15T05:36:48.734212+00:00 ubuntu dbus-daemon[1331]: [session uid=120 pid=1331] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+2026-02-15T05:36:48.739449+00:00 ubuntu systemd[1308]: Started xdg-permission-store.service - sandboxed app permission store.
+2026-02-15T05:36:48.759358+00:00 ubuntu dbus-daemon[1331]: [session uid=120 pid=1331] Successfully activated service 'org.freedesktop.portal.Documents'
+2026-02-15T05:36:48.762606+00:00 ubuntu systemd[1308]: Started xdg-document-portal.service - flatpak document portal service.
+2026-02-15T05:36:48.816231+00:00 ubuntu xdg-document-portal[1351]: Ignoring invalid max threads value 4294967295 > max (100000).
+2026-02-15T05:36:49.018419+00:00 ubuntu systemd[1]: tmp-snap.rootfs_q77PQ1.mount: Deactivated successfully.
+2026-02-15T05:36:49.209914+00:00 ubuntu avahi-daemon[674]: Leaving mDNS multicast group on interface enp0s3.IPv6 with address fe80::a00:27ff:fe3d:ca10.
+2026-02-15T05:36:49.235263+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 1320 of process 1320 owned by '120' high priority at nice level -11.
+2026-02-15T05:36:49.235443+00:00 ubuntu rtkit-daemon[1345]: Supervising 1 threads of 1 processes of 1 users.
+2026-02-15T05:36:49.274161+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 1361 of process 1320 owned by '120' RT at priority 20.
+2026-02-15T05:36:49.284790+00:00 ubuntu rtkit-daemon[1345]: Supervising 2 threads of 1 processes of 1 users.
+2026-02-15T05:36:49.293508+00:00 ubuntu wireplumber[1323]: SPA handle 'api.libcamera.enum.manager' could not be loaded; is it installed?
+2026-02-15T05:36:49.300838+00:00 ubuntu wireplumber[1323]: PipeWire's libcamera SPA missing or broken. libcamera not supported.
+2026-02-15T05:36:49.305545+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 1323 of process 1323 owned by '120' high priority at nice level -11.
+2026-02-15T05:36:49.306373+00:00 ubuntu rtkit-daemon[1345]: Supervising 3 threads of 2 processes of 1 users.
+2026-02-15T05:36:49.309877+00:00 ubuntu avahi-daemon[674]: Joining mDNS multicast group on interface enp0s3.IPv6 with address fd17:625c:f037:2:b024:3ae4:3be9:b24e.
+2026-02-15T05:36:49.339977+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 1353 of process 1323 owned by '120' RT at priority 20.
+2026-02-15T05:36:49.346041+00:00 ubuntu rtkit-daemon[1345]: Supervising 4 threads of 2 processes of 1 users.
+2026-02-15T05:36:49.389149+00:00 ubuntu /usr/libexec/gdm-wayland-session[1350]: dbus-daemon[1350]: [session uid=120 pid=1350] Activating service name='org.freedesktop.systemd1' requested by ':1.2' (uid=120 pid=1352 comm="/usr/libexec/gnome-session-binary --autostart /usr" label="unconfined")
+2026-02-15T05:36:49.389245+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 1324 of process 1324 owned by '120' high priority at nice level -11.
+2026-02-15T05:36:49.389269+00:00 ubuntu rtkit-daemon[1345]: Supervising 5 threads of 3 processes of 1 users.
+2026-02-15T05:36:49.415446+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 1355 of process 1324 owned by '120' RT at priority 20.
+2026-02-15T05:36:49.424009+00:00 ubuntu rtkit-daemon[1345]: Supervising 6 threads of 3 processes of 1 users.
+2026-02-15T05:36:49.437819+00:00 ubuntu avahi-daemon[674]: Registering new address record for fd17:625c:f037:2:b024:3ae4:3be9:b24e on enp0s3.*.
+2026-02-15T05:36:49.437969+00:00 ubuntu avahi-daemon[674]: Withdrawing address record for fe80::a00:27ff:fe3d:ca10 on enp0s3.
+2026-02-15T05:36:49.438147+00:00 ubuntu /usr/libexec/gdm-wayland-session[1350]: dbus-daemon[1350]: [session uid=120 pid=1350] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+2026-02-15T05:36:49.440259+00:00 ubuntu gnome-session[1352]: gnome-session-binary[1352]: WARNING: Could not check if unit gnome-session-wayland@gnome-login.target is active: Error calling StartServiceByName for org.freedesktop.systemd1: Process org.freedesktop.systemd1 exited with status 1
+2026-02-15T05:36:49.440512+00:00 ubuntu gnome-session-binary[1352]: WARNING: Could not check if unit gnome-session-wayland@gnome-login.target is active: Error calling StartServiceByName for org.freedesktop.systemd1: Process org.freedesktop.systemd1 exited with status 1
+2026-02-15T05:36:49.448628+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 1349 of process 1321 owned by '120' RT at priority 20.
+2026-02-15T05:36:49.452120+00:00 ubuntu rtkit-daemon[1345]: Supervising 7 threads of 4 processes of 1 users.
+2026-02-15T05:36:49.452142+00:00 ubuntu avahi-daemon[674]: Registering new address record for fd17:625c:f037:2:a00:27ff:fe3d:ca10 on enp0s3.*.
+2026-02-15T05:36:49.885515+00:00 ubuntu wireplumber[1323]: Failed to get percentage from UPower: org.freedesktop.DBus.Error.NameHasNoOwner
+2026-02-15T05:36:49.907187+00:00 ubuntu wireplumber[1323]: BlueZ system service is not available
+2026-02-15T05:36:50.418439+00:00 ubuntu wireplumber[1323]: The decibel volume range for element 'Center' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:36:50.420947+00:00 ubuntu wireplumber[1323]: The decibel volume range for element 'LFE' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:36:50.420999+00:00 ubuntu wireplumber[1323]: The decibel volume range for element 'Center' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:36:50.421021+00:00 ubuntu wireplumber[1323]: The decibel volume range for element 'LFE' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:36:50.421042+00:00 ubuntu wireplumber[1323]: The decibel volume range for element 'Center' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:36:50.421063+00:00 ubuntu wireplumber[1323]: The decibel volume range for element 'LFE' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:36:50.421084+00:00 ubuntu wireplumber[1323]: The decibel volume range for element 'Center' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:36:50.421104+00:00 ubuntu wireplumber[1323]: The decibel volume range for element 'LFE' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:36:50.421126+00:00 ubuntu wireplumber[1323]: The decibel volume range for element 'Center' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:36:50.421146+00:00 ubuntu wireplumber[1323]: The decibel volume range for element 'LFE' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:36:51.021401+00:00 ubuntu snapd-desktop-integration.snapd-desktop-integration[1322]: Sorry, home directories outside of /home needs configuration.
+2026-02-15T05:36:51.021554+00:00 ubuntu snapd-desktop-integration.snapd-desktop-integration[1322]: See https://snapcraft.io/docs/home-outside-home for details.
+2026-02-15T05:36:51.039428+00:00 ubuntu systemd[1308]: snap.snapd-desktop-integration.snapd-desktop-integration.service: Main process exited, code=exited, status=1/FAILURE
+2026-02-15T05:36:51.047881+00:00 ubuntu systemd[1308]: snap.snapd-desktop-integration.snapd-desktop-integration.service: Failed with result 'exit-code'.
+2026-02-15T05:36:51.047953+00:00 ubuntu systemd[1308]: snap.snapd-desktop-integration.snapd-desktop-integration.service: Consumed 3.289s CPU time.
+2026-02-15T05:36:51.282588+00:00 ubuntu gnome-shell[1413]: Running GNOME Shell (using mutter 46.2) as a Wayland display server
+2026-02-15T05:36:52.926538+00:00 ubuntu rtkit-daemon[1345]: Supervising 7 threads of 4 processes of 1 users.
+2026-02-15T05:36:52.947907+00:00 ubuntu rtkit-daemon[1345]: Supervising 7 threads of 4 processes of 1 users.
+2026-02-15T05:36:52.958023+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 1442 of process 1413 owned by '120' RT at priority 20.
+2026-02-15T05:36:52.958136+00:00 ubuntu rtkit-daemon[1345]: Supervising 8 threads of 5 processes of 1 users.
+2026-02-15T05:36:52.964004+00:00 ubuntu gnome-shell[1413]: Made thread 'KMS thread' realtime scheduled
+2026-02-15T05:36:53.011487+00:00 ubuntu org.gnome.Shell.desktop[1413]: VMware: No 3D enabled (0, Success).
+2026-02-15T05:36:53.198051+00:00 ubuntu org.gnome.Shell.desktop[1413]: message repeated 2 times: [ VMware: No 3D enabled (0, Success).]
+2026-02-15T05:36:53.202907+00:00 ubuntu org.gnome.Shell.desktop[1413]: libEGL warning: egl: failed to create dri2 screen
+2026-02-15T05:36:53.207587+00:00 ubuntu org.gnome.Shell.desktop[1413]: VMware: No 3D enabled (0, Success).
+2026-02-15T05:36:53.207700+00:00 ubuntu org.gnome.Shell.desktop[1413]: libEGL warning: egl: failed to create dri2 screen
+2026-02-15T05:36:53.210674+00:00 ubuntu org.gnome.Shell.desktop[1413]: VMware: No 3D enabled (0, Success).
+2026-02-15T05:36:53.215408+00:00 ubuntu org.gnome.Shell.desktop[1413]: libEGL warning: egl: failed to create dri2 screen
+2026-02-15T05:36:53.215563+00:00 ubuntu gnome-shell[1413]: Added device '/dev/dri/card0' (vmwgfx) using atomic mode setting.
+2026-02-15T05:36:53.218773+00:00 ubuntu gnome-shell[1413]: Failed to initialize accelerated iGPU/dGPU framebuffer sharing: Not hardware accelerated
+2026-02-15T05:36:53.219027+00:00 ubuntu gnome-shell[1413]: Created gbm renderer for '/dev/dri/card0'
+2026-02-15T05:36:53.219051+00:00 ubuntu gnome-shell[1413]: Boot VGA GPU /dev/dri/card0 selected as primary
+2026-02-15T05:36:53.614328+00:00 ubuntu /usr/libexec/gdm-wayland-session[1350]: dbus-daemon[1350]: [session uid=120 pid=1350] Activating service name='org.a11y.Bus' requested by ':1.4' (uid=120 pid=1413 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:36:53.643919+00:00 ubuntu /usr/libexec/gdm-wayland-session[1350]: dbus-daemon[1350]: [session uid=120 pid=1350] Successfully activated service 'org.a11y.Bus'
+2026-02-15T05:36:53.672318+00:00 ubuntu gnome-shell[1413]: Using public X11 display :1024, (using :1025 for managed services)
+2026-02-15T05:36:53.672614+00:00 ubuntu gnome-shell[1413]: Using Wayland display name 'wayland-0'
+2026-02-15T05:36:53.715340+00:00 ubuntu systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+2026-02-15T05:36:53.880859+00:00 ubuntu org.gnome.Shell.desktop[1473]: VMware: No 3D enabled (0, Success).
+2026-02-15T05:36:53.880985+00:00 ubuntu org.gnome.Shell.desktop[1473]: libEGL warning: egl: failed to create dri2 screen
+2026-02-15T05:36:53.884803+00:00 ubuntu org.gnome.Shell.desktop[1473]: VMware: No 3D enabled (0, Success).
+2026-02-15T05:36:53.885457+00:00 ubuntu org.gnome.Shell.desktop[1473]: libEGL warning: egl: failed to create dri2 screen
+2026-02-15T05:36:53.890707+00:00 ubuntu org.gnome.Shell.desktop[1473]: VMware: No 3D enabled (0, Success).
+2026-02-15T05:36:53.890815+00:00 ubuntu org.gnome.Shell.desktop[1473]: libEGL warning: egl: failed to create dri2 screen
+2026-02-15T05:36:54.035877+00:00 ubuntu /usr/libexec/gdm-wayland-session[1471]: dbus-daemon[1471]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=120 pid=1413 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:36:54.040780+00:00 ubuntu dbus-daemon[675]: [system] Activating via systemd: service name='org.freedesktop.ColorManager' unit='colord.service' requested by ':1.38' (uid=120 pid=1413 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:36:54.057103+00:00 ubuntu org.gnome.Shell.desktop[1473]: Failed to initialize glamor, falling back to sw
+2026-02-15T05:36:54.092611+00:00 ubuntu systemd[1]: Starting colord.service - Manage, Install and Generate Color Profiles...
+2026-02-15T05:36:54.099283+00:00 ubuntu org.gnome.Shell.desktop[1473]: VMware: No 3D enabled (0, Success).
+2026-02-15T05:36:54.104865+00:00 ubuntu /usr/libexec/gdm-wayland-session[1471]: dbus-daemon[1471]: Successfully activated service 'org.a11y.atspi.Registry'
+2026-02-15T05:36:54.105138+00:00 ubuntu /usr/libexec/gdm-wayland-session[1475]: SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+2026-02-15T05:36:54.111245+00:00 ubuntu org.gnome.Shell.desktop[1473]: VMware: No 3D enabled (0, Success).
+2026-02-15T05:36:54.198195+00:00 ubuntu colord[1476]: failed to get edid data: EDID length is too small
+2026-02-15T05:36:54.222833+00:00 ubuntu dbus-daemon[675]: [system] Successfully activated service 'org.freedesktop.ColorManager'
+2026-02-15T05:36:54.223479+00:00 ubuntu systemd[1]: Started colord.service - Manage, Install and Generate Color Profiles.
+2026-02-15T05:36:54.228777+00:00 ubuntu org.gnome.Shell.desktop[1482]: The XKEYBOARD keymap compiler (xkbcomp) reports:
+2026-02-15T05:36:54.228918+00:00 ubuntu org.gnome.Shell.desktop[1482]: > Warning:          Could not resolve keysym XF86CameraAccessEnable
+2026-02-15T05:36:54.228931+00:00 ubuntu org.gnome.Shell.desktop[1482]: > Warning:          Could not resolve keysym XF86CameraAccessDisable
+2026-02-15T05:36:54.228945+00:00 ubuntu org.gnome.Shell.desktop[1482]: > Warning:          Could not resolve keysym XF86CameraAccessToggle
+2026-02-15T05:36:54.228988+00:00 ubuntu org.gnome.Shell.desktop[1482]: > Warning:          Could not resolve keysym XF86NextElement
+2026-02-15T05:36:54.228999+00:00 ubuntu org.gnome.Shell.desktop[1482]: > Warning:          Could not resolve keysym XF86PreviousElement
+2026-02-15T05:36:54.229011+00:00 ubuntu org.gnome.Shell.desktop[1482]: > Warning:          Could not resolve keysym XF86AutopilotEngageToggle
+2026-02-15T05:36:54.229021+00:00 ubuntu org.gnome.Shell.desktop[1482]: > Warning:          Could not resolve keysym XF86MarkWaypoint
+2026-02-15T05:36:54.229031+00:00 ubuntu org.gnome.Shell.desktop[1482]: > Warning:          Could not resolve keysym XF86Sos
+2026-02-15T05:36:54.229045+00:00 ubuntu org.gnome.Shell.desktop[1482]: > Warning:          Could not resolve keysym XF86NavChart
+2026-02-15T05:36:54.229055+00:00 ubuntu org.gnome.Shell.desktop[1482]: > Warning:          Could not resolve keysym XF86FishingChart
+2026-02-15T05:36:54.229065+00:00 ubuntu org.gnome.Shell.desktop[1482]: > Warning:          Could not resolve keysym XF86SingleRangeRadar
+2026-02-15T05:36:54.229075+00:00 ubuntu org.gnome.Shell.desktop[1482]: > Warning:          Could not resolve keysym XF86DualRangeRadar
+2026-02-15T05:36:54.229092+00:00 ubuntu org.gnome.Shell.desktop[1482]: > Warning:          Could not resolve keysym XF86RadarOverlay
+2026-02-15T05:36:54.229103+00:00 ubuntu org.gnome.Shell.desktop[1482]: > Warning:          Could not resolve keysym XF86TraditionalSonar
+2026-02-15T05:36:54.229113+00:00 ubuntu org.gnome.Shell.desktop[1482]: > Warning:          Could not resolve keysym XF86ClearvuSonar
+2026-02-15T05:36:54.229123+00:00 ubuntu org.gnome.Shell.desktop[1482]: > Warning:          Could not resolve keysym XF86SidevuSonar
+2026-02-15T05:36:54.229136+00:00 ubuntu org.gnome.Shell.desktop[1482]: > Warning:          Could not resolve keysym XF86NavInfo
+2026-02-15T05:36:54.231187+00:00 ubuntu org.gnome.Shell.desktop[1482]: Errors from xkbcomp are not fatal to the X server
+2026-02-15T05:36:54.570906+00:00 ubuntu systemd[1]: dmesg.service: Deactivated successfully.
+2026-02-15T05:36:54.572958+00:00 ubuntu systemd[1]: dmesg.service: Consumed 4.508s CPU time, 1.9M memory peak, 0B memory swap peak.
+2026-02-15T05:36:55.129605+00:00 ubuntu gnome-shell[1413]: Unset XDG_SESSION_ID, getCurrentSessionProxy() called outside a user session. Asking logind directly.
+2026-02-15T05:36:55.134917+00:00 ubuntu gnome-shell[1413]: Will monitor session c1
+2026-02-15T05:36:55.160170+00:00 ubuntu dbus-daemon[675]: [system] Activating via systemd: service name='org.freedesktop.locale1' unit='dbus-org.freedesktop.locale1.service' requested by ':1.38' (uid=120 pid=1413 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:36:55.244138+00:00 ubuntu systemd[1]: Starting systemd-localed.service - Locale Service...
+2026-02-15T05:36:55.301466+00:00 ubuntu /usr/libexec/gdm-wayland-session[1350]: dbus-daemon[1350]: [session uid=120 pid=1350] Activating service name='org.gnome.Shell.Screencast' requested by ':1.3' (uid=120 pid=1413 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:36:55.364097+00:00 ubuntu dbus-daemon[675]: [system] Successfully activated service 'org.freedesktop.locale1'
+2026-02-15T05:36:55.373208+00:00 ubuntu systemd[1]: Started systemd-localed.service - Locale Service.
+2026-02-15T05:36:55.418745+00:00 ubuntu /usr/libexec/gdm-wayland-session[1350]: dbus-daemon[1350]: [session uid=120 pid=1350] Activating service name='org.freedesktop.impl.portal.PermissionStore' requested by ':1.3' (uid=120 pid=1413 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:36:55.484168+00:00 ubuntu /usr/libexec/gdm-wayland-session[1350]: dbus-daemon[1350]: [session uid=120 pid=1350] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+2026-02-15T05:36:55.570112+00:00 ubuntu dbus-daemon[675]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.38' (uid=120 pid=1413 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:36:55.576628+00:00 ubuntu dbus-daemon[675]: [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service' requested by ':1.38' (uid=120 pid=1413 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:36:55.595714+00:00 ubuntu /usr/libexec/gdm-wayland-session[1350]: dbus-daemon[1350]: [session uid=120 pid=1350] Activating service name='org.gnome.Shell.Notifications' requested by ':1.3' (uid=120 pid=1413 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:36:55.620064+00:00 ubuntu systemd[1]: Starting packagekit.service - PackageKit Daemon...
+2026-02-15T05:36:55.625828+00:00 ubuntu gnome-shell[1413]: Extension ding@rastersoft.com already installed in /usr/share/gnome-shell/extensions/ding@rastersoft.com. /usr/share/gnome-shell/extensions/ding@rastersoft.com will not be loaded
+2026-02-15T05:36:55.631051+00:00 ubuntu gnome-shell[1413]: Extension tiling-assistant@ubuntu.com already installed in /usr/share/gnome-shell/extensions/tiling-assistant@ubuntu.com. /usr/share/gnome-shell/extensions/tiling-assistant@ubuntu.com will not be loaded
+2026-02-15T05:36:55.631084+00:00 ubuntu gnome-shell[1413]: Extension ubuntu-appindicators@ubuntu.com already installed in /usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com. /usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com will not be loaded
+2026-02-15T05:36:55.631105+00:00 ubuntu gnome-shell[1413]: Extension ubuntu-dock@ubuntu.com already installed in /usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com. /usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com will not be loaded
+2026-02-15T05:36:55.643795+00:00 ubuntu systemd[1]: Starting upower.service - Daemon for power management...
+2026-02-15T05:36:55.667050+00:00 ubuntu org.gnome.Shell.desktop[1413]: Window manager warning: Failed to parse saved session file: Failed to open file “/var/lib/gdm3/.config/mutter/sessions/10ad86a5b93dc0cd4c177113380988803600000013520000.ms”: No such file or directory
+2026-02-15T05:36:55.703864+00:00 ubuntu PackageKit: daemon start
+2026-02-15T05:36:56.031378+00:00 ubuntu /usr/libexec/gdm-wayland-session[1350]: dbus-daemon[1350]: [session uid=120 pid=1350] Successfully activated service 'org.gnome.Shell.Notifications'
+2026-02-15T05:36:56.053716+00:00 ubuntu gnome-shell[1413]: Error looking up permission: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for geolocation
+2026-02-15T05:36:56.213544+00:00 ubuntu /usr/libexec/gdm-wayland-session[1350]: dbus-daemon[1350]: [session uid=120 pid=1350] Activating service name='org.freedesktop.portal.IBus' requested by ':1.20' (uid=120 pid=1548 comm="ibus-daemon --panel disable" label="unconfined")
+2026-02-15T05:36:56.234786+00:00 ubuntu dbus-daemon[675]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+2026-02-15T05:36:56.240325+00:00 ubuntu systemd[1]: Started packagekit.service - PackageKit Daemon.
+2026-02-15T05:36:56.381655+00:00 ubuntu kernel: rfkill: input handler disabled
+2026-02-15T05:36:56.429939+00:00 ubuntu /usr/libexec/gdm-wayland-session[1350]: dbus-daemon[1350]: [session uid=120 pid=1350] Successfully activated service 'org.freedesktop.portal.IBus'
+2026-02-15T05:36:56.595619+00:00 ubuntu /usr/libexec/gdm-wayland-session[1350]: dbus-daemon[1350]: [session uid=120 pid=1350] Activating service name='org.freedesktop.systemd1' requested by ':1.10' (uid=120 pid=1533 comm="/usr/libexec/gsd-sharing" label="unconfined")
+2026-02-15T05:36:56.637104+00:00 ubuntu /usr/libexec/gdm-wayland-session[1350]: dbus-daemon[1350]: [session uid=120 pid=1350] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+2026-02-15T05:36:56.638755+00:00 ubuntu gsd-sharing[1533]: Failed to StopUnit service: GDBus.Error:org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.systemd1 exited with status 1
+2026-02-15T05:36:56.638828+00:00 ubuntu gsd-sharing[1533]: Failed to StopUnit service: GDBus.Error:org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.systemd1 exited with status 1
+2026-02-15T05:36:56.648195+00:00 ubuntu dbus-daemon[675]: [system] Successfully activated service 'org.freedesktop.UPower'
+2026-02-15T05:36:56.652953+00:00 ubuntu systemd[1]: Started upower.service - Daemon for power management.
+2026-02-15T05:36:56.871457+00:00 ubuntu NetworkManager[1094]: <info>  [1771133816.8711] agent-manager: agent[aba73355142d8388,:1.38/org.gnome.Shell.NetworkAgent/120]: agent registered
+2026-02-15T05:36:57.059010+00:00 ubuntu dbus-daemon[675]: [system] Activating via systemd: service name='org.freedesktop.GeoClue2' unit='geoclue.service' requested by ':1.38' (uid=120 pid=1413 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:36:57.085023+00:00 ubuntu systemd[1]: Starting geoclue.service - Location Lookup Service...
+2026-02-15T05:36:57.366813+00:00 ubuntu dbus-daemon[675]: [system] Successfully activated service 'org.freedesktop.GeoClue2'
+2026-02-15T05:36:57.370256+00:00 ubuntu systemd[1]: Started geoclue.service - Location Lookup Service.
+2026-02-15T05:36:57.668471+00:00 ubuntu org.gnome.Shell.desktop[1760]: The XKEYBOARD keymap compiler (xkbcomp) reports:
+2026-02-15T05:36:57.668577+00:00 ubuntu org.gnome.Shell.desktop[1760]: > Warning:          Unsupported maximum keycode 708, clipping.
+2026-02-15T05:36:57.668591+00:00 ubuntu org.gnome.Shell.desktop[1760]: >                   X11 cannot support keycodes above 255.
+2026-02-15T05:36:57.688117+00:00 ubuntu org.gnome.Shell.desktop[1760]: > Warning:          Could not resolve keysym XF86CameraAccessEnable
+2026-02-15T05:36:57.688762+00:00 ubuntu org.gnome.Shell.desktop[1760]: > Warning:          Could not resolve keysym XF86CameraAccessDisable
+2026-02-15T05:36:57.689090+00:00 ubuntu org.gnome.Shell.desktop[1760]: > Warning:          Could not resolve keysym XF86CameraAccessToggle
+2026-02-15T05:36:57.689308+00:00 ubuntu org.gnome.Shell.desktop[1760]: > Warning:          Could not resolve keysym XF86NextElement
+2026-02-15T05:36:57.689337+00:00 ubuntu org.gnome.Shell.desktop[1760]: > Warning:          Could not resolve keysym XF86PreviousElement
+2026-02-15T05:36:57.689348+00:00 ubuntu org.gnome.Shell.desktop[1760]: > Warning:          Could not resolve keysym XF86AutopilotEngageToggle
+2026-02-15T05:36:57.689359+00:00 ubuntu org.gnome.Shell.desktop[1760]: > Warning:          Could not resolve keysym XF86MarkWaypoint
+2026-02-15T05:36:57.689370+00:00 ubuntu org.gnome.Shell.desktop[1760]: > Warning:          Could not resolve keysym XF86Sos
+2026-02-15T05:36:57.689380+00:00 ubuntu org.gnome.Shell.desktop[1760]: > Warning:          Could not resolve keysym XF86NavChart
+2026-02-15T05:36:57.689414+00:00 ubuntu org.gnome.Shell.desktop[1760]: > Warning:          Could not resolve keysym XF86FishingChart
+2026-02-15T05:36:57.689424+00:00 ubuntu org.gnome.Shell.desktop[1760]: > Warning:          Could not resolve keysym XF86SingleRangeRadar
+2026-02-15T05:36:57.689434+00:00 ubuntu org.gnome.Shell.desktop[1760]: > Warning:          Could not resolve keysym XF86DualRangeRadar
+2026-02-15T05:36:57.689444+00:00 ubuntu org.gnome.Shell.desktop[1760]: > Warning:          Could not resolve keysym XF86RadarOverlay
+2026-02-15T05:36:57.689455+00:00 ubuntu org.gnome.Shell.desktop[1760]: > Warning:          Could not resolve keysym XF86TraditionalSonar
+2026-02-15T05:36:57.689465+00:00 ubuntu org.gnome.Shell.desktop[1760]: > Warning:          Could not resolve keysym XF86ClearvuSonar
+2026-02-15T05:36:57.689475+00:00 ubuntu org.gnome.Shell.desktop[1760]: > Warning:          Could not resolve keysym XF86SidevuSonar
+2026-02-15T05:36:57.689485+00:00 ubuntu org.gnome.Shell.desktop[1760]: > Warning:          Could not resolve keysym XF86NavInfo
+2026-02-15T05:36:57.689504+00:00 ubuntu org.gnome.Shell.desktop[1760]: Errors from xkbcomp are not fatal to the X server
+2026-02-15T05:36:57.787706+00:00 ubuntu /usr/libexec/gdm-wayland-session[1350]: dbus-daemon[1350]: [session uid=120 pid=1350] Activating service name='org.freedesktop.portal.IBus' requested by ':1.28' (uid=120 pid=1751 comm="ibus-daemon --panel disable -r --xim" label="unconfined")
+2026-02-15T05:36:57.853596+00:00 ubuntu /usr/libexec/gdm-wayland-session[1350]: dbus-daemon[1350]: [session uid=120 pid=1350] Successfully activated service 'org.freedesktop.portal.IBus'
+2026-02-15T05:36:57.908524+00:00 ubuntu org.gnome.Shell.desktop[1746]: libEGL warning: DRI3 error: Could not get DRI3 device
+2026-02-15T05:36:57.916156+00:00 ubuntu org.gnome.Shell.desktop[1746]: libEGL warning: Ensure your X server supports DRI3 to get accelerated rendering
+2026-02-15T05:36:58.504786+00:00 ubuntu gnome-shell[1413]: Registering session with GDM
+2026-02-15T05:36:58.679125+00:00 ubuntu systemd[1]: Finished plymouth-quit-wait.service - Hold until boot process finishes up.
+2026-02-15T05:36:58.690868+00:00 ubuntu systemd[1]: Reached target multi-user.target - Multi-User System.
+2026-02-15T05:36:58.690922+00:00 ubuntu systemd[1]: Reached target graphical.target - Graphical Interface.
+2026-02-15T05:36:58.738242+00:00 ubuntu systemd[1]: Starting setvtrgb.service - Set console scheme...
+2026-02-15T05:36:58.751495+00:00 ubuntu systemd[1]: Starting systemd-update-utmp-runlevel.service - Record Runlevel Change in UTMP...
+2026-02-15T05:36:58.781261+00:00 ubuntu systemd[1]: Finished setvtrgb.service - Set console scheme.
+2026-02-15T05:36:58.798956+00:00 ubuntu systemd[1]: Created slice system-getty.slice - Slice /system/getty.
+2026-02-15T05:36:58.816217+00:00 ubuntu systemd[1]: systemd-update-utmp-runlevel.service: Deactivated successfully.
+2026-02-15T05:36:58.818665+00:00 ubuntu systemd[1]: Finished systemd-update-utmp-runlevel.service - Record Runlevel Change in UTMP.
+2026-02-15T05:36:58.842972+00:00 ubuntu systemd[1]: Startup finished in 10.750s (kernel) + 29.707s (userspace) = 40.457s.
+2026-02-15T05:36:58.968099+00:00 ubuntu dbus-daemon[675]: [system] Activating via systemd: service name='net.reactivated.Fprint' unit='fprintd.service' requested by ':1.38' (uid=120 pid=1413 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:36:59.021491+00:00 ubuntu /usr/libexec/gdm-wayland-session[1350]: dbus-daemon[1350]: [session uid=120 pid=1350] Successfully activated service 'org.gnome.Shell.Screencast'
+2026-02-15T05:36:59.036204+00:00 ubuntu systemd[1]: Starting fprintd.service - Fingerprint Authentication Daemon...
+2026-02-15T05:36:59.377605+00:00 ubuntu dbus-daemon[675]: [system] Successfully activated service 'net.reactivated.Fprint'
+2026-02-15T05:36:59.377674+00:00 ubuntu systemd[1]: Started fprintd.service - Fingerprint Authentication Daemon.
+2026-02-15T05:36:59.794230+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 1442 of process 1413 owned by '120' high priority at nice level 0.
+2026-02-15T05:36:59.795548+00:00 ubuntu rtkit-daemon[1345]: Supervising 8 threads of 5 processes of 1 users.
+2026-02-15T05:36:59.810674+00:00 ubuntu rtkit-daemon[1345]: Supervising 7 threads of 4 processes of 1 users.
+2026-02-15T05:36:59.818786+00:00 ubuntu rtkit-daemon[1345]: Supervising 7 threads of 4 processes of 1 users.
+2026-02-15T05:36:59.828155+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 1442 of process 1413 owned by '120' RT at priority 20.
+2026-02-15T05:36:59.828419+00:00 ubuntu rtkit-daemon[1345]: Supervising 8 threads of 5 processes of 1 users.
+2026-02-15T05:37:00.161440+00:00 ubuntu spice-vdagent[1832]: vdagent virtio channel /dev/virtio-ports/com.redhat.spice.0 does not exist, exiting
+2026-02-15T05:37:00.189339+00:00 ubuntu gnome-session-binary[1352]: Entering running state
+2026-02-15T05:37:00.231967+00:00 ubuntu xbrlapi.desktop[1839]: openConnection: connect: No such file or directory
+2026-02-15T05:37:00.232372+00:00 ubuntu xbrlapi.desktop[1839]: cannot connect to braille devices daemon brltty at :0
+2026-02-15T05:37:00.322070+00:00 ubuntu gsd-media-keys[1589]: Failed to grab accelerator for keybinding settings:playback-repeat
+2026-02-15T05:37:00.322504+00:00 ubuntu gsd-media-keys[1589]: Failed to grab accelerator for keybinding settings:hibernate
+2026-02-15T05:37:00.393601+00:00 ubuntu /usr/libexec/gdm-wayland-session[1350]: dbus-daemon[1350]: [session uid=120 pid=1350] Activating service name='org.gnome.ScreenSaver' requested by ':1.25' (uid=120 pid=1630 comm="/usr/libexec/gsd-power" label="unconfined")
+2026-02-15T05:37:00.504077+00:00 ubuntu /usr/libexec/gdm-wayland-session[1350]: dbus-daemon[1350]: [session uid=120 pid=1350] Successfully activated service 'org.gnome.ScreenSaver'
+2026-02-15T05:37:03.955007+00:00 ubuntu gnome-shell[1413]: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: Set global engine failed: Operation was cancelled#012#012Stack trace:#012  _promisify/proto[asyncFunc]/</<@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:453:45#012  @resource:///org/gnome/shell/ui/init.js:21:20#012  ### Promise created here: ####012  _setEngine@resource:///org/gnome/shell/misc/ibusManager.js:291:30#012  setEngine@resource:///org/gnome/shell/misc/ibusManager.js:314:24#012  activateInputSource@resource:///org/gnome/shell/ui/status/keyboard.js:527:31#012  _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42#012  _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10#012  activate@resource:///org/gnome/shell/ui/status/keyboard.js:68:14#012  _inputSourcesChanged@resource:///org/gnome/shell/ui/status/keyboard.js:661:33#012  reload@resource:///org/gnome/shell/ui/status/keyboard.js:396:14#012  _ibusSetContentType@resource:///org/gnome/shell/ui/status/keyboard.js:736:14#012  _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42#012  _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10#012  _setContentType@resource:///org/gnome/shell/misc/ibusManager.js:266:14#012  @resource:///org/gnome/shell/ui/init.js:21:20#012  
+2026-02-15T05:37:46.110525+00:00 ubuntu systemd-timesyncd[600]: Contacted time server 167.179.119.205:123 (2.ubuntu.pool.ntp.org).
+2026-02-15T05:37:46.110648+00:00 ubuntu systemd-timesyncd[600]: Initial clock synchronization to Sun 2026-02-15 05:37:46.104185 UTC.
+2026-02-15T05:37:46.114846+00:00 ubuntu systemd-resolved[594]: Clock change detected. Flushing caches.
+2026-02-15T05:37:46.177187+00:00 ubuntu systemd[1]: Starting e2scrub_all.service - Online ext4 Metadata Check for All Filesystems...
+2026-02-15T05:37:46.185585+00:00 ubuntu systemd[1]: e2scrub_all.service: Deactivated successfully.
+2026-02-15T05:37:46.189028+00:00 ubuntu systemd[1]: Finished e2scrub_all.service - Online ext4 Metadata Check for All Filesystems.
+2026-02-15T05:37:48.702185+00:00 ubuntu systemd[1]: Created slice user-1000.slice - User Slice of UID 1000.
+2026-02-15T05:37:48.732435+00:00 ubuntu systemd[1]: Starting user-runtime-dir@1000.service - User Runtime Directory /run/user/1000...
+2026-02-15T05:37:48.848656+00:00 ubuntu systemd[1]: Finished user-runtime-dir@1000.service - User Runtime Directory /run/user/1000.
+2026-02-15T05:37:48.889223+00:00 ubuntu systemd[1]: Starting user@1000.service - User Manager for UID 1000...
+2026-02-15T05:37:50.277849+00:00 ubuntu systemd[1873]: Queued start job for default target default.target.
+2026-02-15T05:37:51.327630+00:00 ubuntu kernel: systemd-journald[303]: /var/log/journal/5f09556e9516430881dacd55026553e8/user-1000.journal: Journal file uses a different sequence number ID, rotating.
+2026-02-15T05:37:57.103670+00:00 ubuntu kernel: rfkill: input handler enabled
+2026-02-15T05:37:57.368862+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] AppArmor D-Bus mediation is enabled
+2026-02-15T05:37:57.379706+00:00 ubuntu systemd[1873]: Created slice app.slice - User Application Slice.
+2026-02-15T05:37:57.401481+00:00 ubuntu rtkit-daemon[1345]: Supervising 8 threads of 5 processes of 1 users.
+2026-02-15T05:37:57.406326+00:00 ubuntu systemd[1873]: Created slice session.slice - User Core Session Slice.
+2026-02-15T05:37:57.406373+00:00 ubuntu rtkit-daemon[1345]: Supervising 8 threads of 5 processes of 1 users.
+2026-02-15T05:37:57.406510+00:00 ubuntu systemd[1873]: Started ubuntu-report.path - Pending report trigger for Ubuntu Report.
+2026-02-15T05:37:57.406532+00:00 ubuntu rtkit-daemon[1345]: Supervising 8 threads of 5 processes of 1 users.
+2026-02-15T05:37:57.408002+00:00 ubuntu systemd[1873]: Started launchpadlib-cache-clean.timer - Clean up old files in the Launchpadlib cache.
+2026-02-15T05:37:57.410276+00:00 ubuntu rtkit-daemon[1345]: Supervising 8 threads of 5 processes of 1 users.
+2026-02-15T05:37:57.410444+00:00 ubuntu systemd[1873]: Started snap.firmware-updater.firmware-notifier.timer - Timer firmware-notifier for snap application firmware-updater.firmware-notifier.
+2026-02-15T05:37:57.410490+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 1888 of process 1888 owned by '1000' high priority at nice level -11.
+2026-02-15T05:37:57.410575+00:00 ubuntu systemd[1873]: Reached target paths.target - Paths.
+2026-02-15T05:37:57.410597+00:00 ubuntu rtkit-daemon[1345]: Supervising 9 threads of 6 processes of 2 users.
+2026-02-15T05:37:57.410735+00:00 ubuntu systemd[1873]: Reached target timers.target - Timers.
+2026-02-15T05:37:57.410760+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 1904 of process 1888 owned by '1000' RT at priority 20.
+2026-02-15T05:37:57.410878+00:00 ubuntu systemd[1873]: Starting dbus.socket - D-Bus User Message Bus Socket...
+2026-02-15T05:37:57.410903+00:00 ubuntu rtkit-daemon[1345]: Supervising 10 threads of 6 processes of 2 users.
+2026-02-15T05:37:57.411018+00:00 ubuntu systemd[1873]: Listening on dirmngr.socket - GnuPG network certificate management daemon.
+2026-02-15T05:37:57.411059+00:00 ubuntu rtkit-daemon[1345]: Supervising 10 threads of 6 processes of 2 users.
+2026-02-15T05:37:57.411178+00:00 ubuntu systemd[1873]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+2026-02-15T05:37:57.411203+00:00 ubuntu rtkit-daemon[1345]: Supervising 10 threads of 6 processes of 2 users.
+2026-02-15T05:37:57.411570+00:00 ubuntu gnome-keyring-daemon[1893]: GNOME_KEYRING_CONTROL=/run/user/1000/keyring
+2026-02-15T05:37:57.411643+00:00 ubuntu systemd[1873]: Listening on gnome-keyring-daemon.socket - GNOME Keyring daemon.
+2026-02-15T05:37:57.411689+00:00 ubuntu rtkit-daemon[1345]: Supervising 10 threads of 6 processes of 2 users.
+2026-02-15T05:37:57.413311+00:00 ubuntu xdg-document-portal[1934]: Ignoring invalid max threads value 4294967295 > max (100000).
+2026-02-15T05:37:57.413392+00:00 ubuntu systemd[1873]: Listening on gpg-agent-browser.socket - GnuPG cryptographic agent and passphrase cache (access for web browsers).
+2026-02-15T05:37:57.413421+00:00 ubuntu rtkit-daemon[1345]: Supervising 10 threads of 6 processes of 2 users.
+2026-02-15T05:37:57.413603+00:00 ubuntu systemd[1873]: Listening on gpg-agent-extra.socket - GnuPG cryptographic agent and passphrase cache (restricted).
+2026-02-15T05:37:57.413643+00:00 ubuntu rtkit-daemon[1345]: Supervising 10 threads of 6 processes of 2 users.
+2026-02-15T05:37:57.415056+00:00 ubuntu systemd[1873]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+2026-02-15T05:37:57.417446+00:00 ubuntu rtkit-daemon[1345]: Supervising 10 threads of 6 processes of 2 users.
+2026-02-15T05:37:57.417663+00:00 ubuntu systemd[1873]: Listening on gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.
+2026-02-15T05:37:57.417721+00:00 ubuntu rtkit-daemon[1345]: Supervising 10 threads of 6 processes of 2 users.
+2026-02-15T05:37:57.417742+00:00 ubuntu systemd[1873]: Listening on keyboxd.socket - GnuPG public key management service.
+2026-02-15T05:37:57.417761+00:00 ubuntu rtkit-daemon[1345]: Supervising 10 threads of 6 processes of 2 users.
+2026-02-15T05:37:57.417776+00:00 ubuntu systemd[1873]: Listening on pipewire-pulse.socket - PipeWire PulseAudio.
+2026-02-15T05:37:57.417794+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 1910 of process 1886 owned by '1000' RT at priority 20.
+2026-02-15T05:37:57.417817+00:00 ubuntu systemd[1873]: Listening on pipewire.socket - PipeWire Multimedia System Sockets.
+2026-02-15T05:37:57.417834+00:00 ubuntu rtkit-daemon[1345]: Supervising 11 threads of 7 processes of 2 users.
+2026-02-15T05:37:57.417850+00:00 ubuntu systemd[1873]: Listening on pk-debconf-helper.socket - debconf communication socket.
+2026-02-15T05:37:57.417866+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 1890 of process 1890 owned by '1000' high priority at nice level -11.
+2026-02-15T05:37:57.417882+00:00 ubuntu systemd[1873]: Listening on snapd.session-agent.socket - REST API socket for snapd user session agent.
+2026-02-15T05:37:57.417903+00:00 ubuntu rtkit-daemon[1345]: Supervising 12 threads of 8 processes of 2 users.
+2026-02-15T05:37:57.417919+00:00 ubuntu systemd[1873]: Listening on speech-dispatcher.socket - Speech Dispatcher Socket.
+2026-02-15T05:37:57.417935+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 1914 of process 1890 owned by '1000' RT at priority 20.
+2026-02-15T05:37:57.417951+00:00 ubuntu systemd[1873]: Listening on dbus.socket - D-Bus User Message Bus Socket.
+2026-02-15T05:37:57.419311+00:00 ubuntu rtkit-daemon[1345]: Supervising 13 threads of 8 processes of 2 users.
+2026-02-15T05:37:57.422134+00:00 ubuntu systemd[1873]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+2026-02-15T05:37:57.422169+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 1885 of process 1885 owned by '1000' high priority at nice level -11.
+2026-02-15T05:37:57.422213+00:00 ubuntu systemd[1873]: Reached target sockets.target - Sockets.
+2026-02-15T05:37:57.422231+00:00 ubuntu rtkit-daemon[1345]: Supervising 14 threads of 9 processes of 2 users.
+2026-02-15T05:37:57.422247+00:00 ubuntu systemd[1873]: Reached target basic.target - Basic System.
+2026-02-15T05:37:57.422270+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 1912 of process 1885 owned by '1000' RT at priority 20.
+2026-02-15T05:37:57.422287+00:00 ubuntu systemd[1873]: gnome-initial-setup-copy-worker.service - GNOME Initial Setup Copy Worker was skipped because of an unmet condition check (ConditionPathExists=!/home/zooz/.config/gnome-initial-setup-done).
+2026-02-15T05:37:57.422305+00:00 ubuntu rtkit-daemon[1345]: Supervising 15 threads of 9 processes of 2 users.
+2026-02-15T05:37:57.425681+00:00 ubuntu systemd[1]: Started user@1000.service - User Manager for UID 1000.
+2026-02-15T05:37:57.428346+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating via systemd: service name='org.freedesktop.portal.Documents' unit='xdg-document-portal.service' requested by ':1.9' (uid=1000 pid=1887 comm="/usr/bin/snap run snapd-desktop-integration" label="unconfined")
+2026-02-15T05:37:57.428386+00:00 ubuntu systemd[1]: Started session-2.scope - Session 2 of User zooz.
+2026-02-15T05:37:57.428405+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating via systemd: service name='org.freedesktop.impl.portal.PermissionStore' unit='xdg-permission-store.service' requested by ':1.10' (uid=1000 pid=1934 comm="/usr/libexec/xdg-document-portal" label="unconfined")
+2026-02-15T05:37:57.428425+00:00 ubuntu systemd[1873]: Started pipewire.service - PipeWire Multimedia Service.
+2026-02-15T05:37:57.428450+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+2026-02-15T05:37:57.428476+00:00 ubuntu systemd[1873]: Started filter-chain.service - PipeWire filter chain daemon.
+2026-02-15T05:37:57.428678+00:00 ubuntu systemd[1873]: Started snap.snapd-desktop-integration.snapd-desktop-integration.service - Service for snap application snapd-desktop-integration.snapd-desktop-integration.
+2026-02-15T05:37:57.428700+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.freedesktop.portal.Documents'
+2026-02-15T05:37:57.428719+00:00 ubuntu systemd[1873]: Started wireplumber.service - Multimedia Service Session Manager.
+2026-02-15T05:37:57.428850+00:00 ubuntu gdm3: Gdm: on_display_added: assertion 'GDM_IS_REMOTE_DISPLAY (display)' failed
+2026-02-15T05:37:57.428879+00:00 ubuntu systemd[1873]: Started pipewire-pulse.service - PipeWire PulseAudio.
+2026-02-15T05:37:57.428899+00:00 ubuntu systemd[1873]: Reached target default.target - Main User Target.
+2026-02-15T05:37:57.428930+00:00 ubuntu systemd[1873]: Startup finished in 2.444s.
+2026-02-15T05:37:57.428949+00:00 ubuntu systemd[1873]: Starting dbus.service - D-Bus User Message Bus...
+2026-02-15T05:37:57.428968+00:00 ubuntu systemd[1873]: Started gnome-keyring-daemon.service - GNOME Keyring daemon.
+2026-02-15T05:37:57.428989+00:00 ubuntu systemd[1873]: Started dbus.service - D-Bus User Message Bus.
+2026-02-15T05:37:57.430824+00:00 ubuntu pipewire[1885]: mod.jackdbus-detect: Failed to receive jackdbus reply: org.freedesktop.DBus.Error.ServiceUnknown: The name org.jackaudio.service was not provided by any .service files
+2026-02-15T05:37:57.437212+00:00 ubuntu wireplumber[1888]: SPA handle 'api.libcamera.enum.manager' could not be loaded; is it installed?
+2026-02-15T05:37:57.437299+00:00 ubuntu wireplumber[1888]: PipeWire's libcamera SPA missing or broken. libcamera not supported.
+2026-02-15T05:37:57.437322+00:00 ubuntu systemd[1873]: Starting xdg-document-portal.service - flatpak document portal service...
+2026-02-15T05:37:57.437347+00:00 ubuntu systemd[1873]: Starting xdg-permission-store.service - sandboxed app permission store...
+2026-02-15T05:37:57.437366+00:00 ubuntu systemd[1873]: Started xdg-permission-store.service - sandboxed app permission store.
+2026-02-15T05:37:57.437390+00:00 ubuntu systemd[1873]: Started xdg-document-portal.service - flatpak document portal service.
+2026-02-15T05:37:57.437512+00:00 ubuntu gsd-media-keys[1589]: Unable to get default source
+2026-02-15T05:37:57.437558+00:00 ubuntu gsd-media-keys[1589]: Unable to get default sink
+2026-02-15T05:37:57.437583+00:00 ubuntu wireplumber[1888]: The decibel volume range for element 'Center' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:37:57.437611+00:00 ubuntu wireplumber[1888]: The decibel volume range for element 'LFE' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:37:57.437633+00:00 ubuntu wireplumber[1888]: The decibel volume range for element 'Center' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:37:57.437654+00:00 ubuntu wireplumber[1888]: The decibel volume range for element 'LFE' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:37:57.437676+00:00 ubuntu wireplumber[1888]: The decibel volume range for element 'Center' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:37:57.437697+00:00 ubuntu wireplumber[1888]: The decibel volume range for element 'LFE' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:37:57.437718+00:00 ubuntu wireplumber[1888]: The decibel volume range for element 'Center' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:37:57.437740+00:00 ubuntu wireplumber[1888]: The decibel volume range for element 'LFE' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:37:57.437765+00:00 ubuntu wireplumber[1888]: The decibel volume range for element 'Center' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:37:57.437785+00:00 ubuntu wireplumber[1888]: The decibel volume range for element 'LFE' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-15T05:37:57.437806+00:00 ubuntu wireplumber[1888]: BlueZ system service is not available
+2026-02-15T05:37:58.159371+00:00 ubuntu systemd[1873]: Created slice app-gnome\x2dsession\x2dmanager.slice - Slice /app/gnome-session-manager.
+2026-02-15T05:37:58.162072+00:00 ubuntu systemd[1873]: Created slice background.slice - User Background Tasks Slice.
+2026-02-15T05:37:58.162134+00:00 ubuntu systemd[1873]: Started update-notifier-crash.path - Path trigger for Apport crash notifications.
+2026-02-15T05:37:58.168996+00:00 ubuntu systemd[1873]: Started update-notifier-release.path - Path trigger for new release of Ubuntu notifications.
+2026-02-15T05:37:58.169166+00:00 ubuntu systemd[1873]: Reached target gnome-session-wayland.target - GNOME Wayland Session.
+2026-02-15T05:37:58.169187+00:00 ubuntu systemd[1873]: Reached target org.gnome.Shell.target - GNOME Shell.
+2026-02-15T05:37:58.179109+00:00 ubuntu systemd[1873]: Started gcr-ssh-agent.service - GCR ssh-agent wrapper.
+2026-02-15T05:37:58.187932+00:00 ubuntu systemd[1873]: Starting gnome-session-monitor.service - Monitor Session leader for GNOME Session...
+2026-02-15T05:37:58.198081+00:00 ubuntu systemd[1873]: Starting session-migration.service - Session Migration...
+2026-02-15T05:37:58.200795+00:00 ubuntu systemd[1873]: Started ssh-agent.service - OpenSSH Agent.
+2026-02-15T05:37:58.209986+00:00 ubuntu systemd[1873]: Starting xdg-desktop-portal-rewrite-launchers.service - Rewrite dynamic launcher portal entries...
+2026-02-15T05:37:58.235531+00:00 ubuntu systemd[1873]: Started gnome-session-monitor.service - Monitor Session leader for GNOME Session.
+2026-02-15T05:37:58.236544+00:00 ubuntu systemd[1873]: Finished session-migration.service - Session Migration.
+2026-02-15T05:37:58.320321+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating via systemd: service name='org.gtk.vfs.Daemon' unit='gvfs-daemon.service' requested by ':1.19' (uid=1000 pid=2058 comm="/usr/libexec/xdg-desktop-portal-rewrite-launchers" label="unconfined")
+2026-02-15T05:37:58.376453+00:00 ubuntu systemd[1873]: Starting gvfs-daemon.service - Virtual filesystem service...
+2026-02-15T05:37:58.491426+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.gtk.vfs.Daemon'
+2026-02-15T05:37:58.494145+00:00 ubuntu systemd[1873]: Started gvfs-daemon.service - Virtual filesystem service.
+2026-02-15T05:37:58.532340+00:00 ubuntu systemd[1873]: Finished xdg-desktop-portal-rewrite-launchers.service - Rewrite dynamic launcher portal entries.
+2026-02-15T05:37:58.536360+00:00 ubuntu systemd[1873]: Reached target graphical-session-pre.target - Session services which should run early before the graphical session is brought up.
+2026-02-15T05:37:58.536383+00:00 ubuntu systemd[1873]: Reached target gnome-session-pre.target - Tasks to be run before GNOME Session starts.
+2026-02-15T05:37:58.583562+00:00 ubuntu systemd[1873]: Starting gnome-session-manager@ubuntu.service - GNOME Session Manager (session: ubuntu)...
+2026-02-15T05:37:58.591980+00:00 ubuntu kernel: workqueue: css_killed_work_fn hogged CPU for >10000us 4 times, consider switching to WQ_UNBOUND
+2026-02-15T05:37:58.894387+00:00 ubuntu gnome-keyring-d[1893]: The Secret Service was already initialized
+2026-02-15T05:37:58.896403+00:00 ubuntu gnome-keyring-secrets.desktop[2111]: discover_other_daemon: 1GNOME_KEYRING_CONTROL=/run/user/1000/keyring
+2026-02-15T05:37:58.915344+00:00 ubuntu gnome-keyring-pkcs11.desktop[2117]: discover_other_daemon: 1GNOME_KEYRING_CONTROL=/run/user/1000/keyring
+2026-02-15T05:37:58.915447+00:00 ubuntu gnome-keyring-d[1893]: The PKCS#11 component was already initialized
+2026-02-15T05:37:58.934016+00:00 ubuntu gnome-session[2088]: gnome-session-binary[2088]: GnomeDesktop-WARNING: Could not create transient scope for PID 2106: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+2026-02-15T05:37:58.935570+00:00 ubuntu gnome-session[2088]: gnome-session-binary[2088]: GnomeDesktop-WARNING: Could not create transient scope for PID 2108: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+2026-02-15T05:37:58.935596+00:00 ubuntu gnome-session-binary[2088]: GnomeDesktop-WARNING: Could not create transient scope for PID 2106: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+2026-02-15T05:37:58.935643+00:00 ubuntu gnome-session-binary[2088]: GnomeDesktop-WARNING: Could not create transient scope for PID 2108: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+2026-02-15T05:37:58.946502+00:00 ubuntu systemd[1873]: Started app-gnome-gnome\x2dkeyring\x2dssh-2116.scope - Application launched by gnome-session-binary.
+2026-02-15T05:37:58.956818+00:00 ubuntu gnome-keyring-ssh.desktop[2122]: discover_other_daemon: 1GNOME_KEYRING_CONTROL=/run/user/1000/keyring
+2026-02-15T05:37:58.956833+00:00 ubuntu gnome-keyring-ssh.desktop[2122]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+2026-02-15T05:37:58.964734+00:00 ubuntu systemd[1873]: Started gnome-session-manager@ubuntu.service - GNOME Session Manager (session: ubuntu).
+2026-02-15T05:37:58.975169+00:00 ubuntu systemd[1873]: Reached target gnome-session-manager.target - GNOME Session Manager is ready.
+2026-02-15T05:37:59.001117+00:00 ubuntu kernel: workqueue: css_killed_work_fn hogged CPU for >10000us 5 times, consider switching to WQ_UNBOUND
+2026-02-15T05:37:59.019891+00:00 ubuntu systemd[1873]: Starting org.gnome.Shell@wayland.service - GNOME Shell on Wayland...
+2026-02-15T05:37:59.022467+00:00 ubuntu systemd[1873]: org.gnome.Shell@x11.service - GNOME Shell on X11 was skipped because of an unmet condition check (ConditionEnvironment=XDG_SESSION_TYPE=x11).
+2026-02-15T05:37:59.067754+00:00 ubuntu systemd[1873]: Started app-gnome-at\x2dspi\x2ddbus\x2dbus-2128.scope - Application launched by gnome-session-binary.
+2026-02-15T05:37:59.070174+00:00 ubuntu systemd[1873]: app-gnome-xdg\x2duser\x2ddirs-2124.scope: PID 2124 vanished before we could move it to target cgroup '/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome-xdg\x2duser\x2ddirs-2124.scope', skipping: No such process
+2026-02-15T05:37:59.070230+00:00 ubuntu systemd[1873]: app-gnome-xdg\x2duser\x2ddirs-2124.scope: No PIDs left to attach to the scope's control group, refusing.
+2026-02-15T05:37:59.070251+00:00 ubuntu systemd[1873]: app-gnome-xdg\x2duser\x2ddirs-2124.scope: Failed with result 'resources'.
+2026-02-15T05:37:59.070271+00:00 ubuntu systemd[1873]: Failed to start app-gnome-xdg\x2duser\x2ddirs-2124.scope - Application launched by gnome-session-binary.
+2026-02-15T05:37:59.222913+00:00 ubuntu gnome-shell[2125]: Running GNOME Shell (using mutter 46.2) as a Wayland display server
+2026-02-15T05:37:59.408305+00:00 ubuntu rtkit-daemon[1345]: Supervising 15 threads of 9 processes of 2 users.
+2026-02-15T05:37:59.413496+00:00 ubuntu rtkit-daemon[1345]: Supervising 15 threads of 9 processes of 2 users.
+2026-02-15T05:37:59.413948+00:00 ubuntu gnome-shell[2125]: VMware: No 3D enabled (0, Success).
+2026-02-15T05:37:59.424456+00:00 ubuntu gnome-shell[2125]: VMware: No 3D enabled (0, Success).
+2026-02-15T05:37:59.451930+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 2153 of process 2125 owned by '1000' RT at priority 20.
+2026-02-15T05:37:59.452028+00:00 ubuntu rtkit-daemon[1345]: Supervising 16 threads of 10 processes of 2 users.
+2026-02-15T05:37:59.453571+00:00 ubuntu gnome-shell[2125]: Made thread 'KMS thread' realtime scheduled
+2026-02-15T05:37:59.654786+00:00 ubuntu gnome-shell[2125]: VMware: No 3D enabled (0, Success).
+2026-02-15T05:37:59.654921+00:00 ubuntu gnome-shell[2125]: libEGL warning: egl: failed to create dri2 screen
+2026-02-15T05:37:59.659168+00:00 ubuntu gnome-shell[2125]: VMware: No 3D enabled (0, Success).
+2026-02-15T05:37:59.659532+00:00 ubuntu gnome-shell[2125]: libEGL warning: egl: failed to create dri2 screen
+2026-02-15T05:37:59.662881+00:00 ubuntu gnome-shell[2125]: VMware: No 3D enabled (0, Success).
+2026-02-15T05:37:59.662989+00:00 ubuntu gnome-shell[2125]: libEGL warning: egl: failed to create dri2 screen
+2026-02-15T05:37:59.666102+00:00 ubuntu gnome-shell[2125]: Added device '/dev/dri/card0' (vmwgfx) using atomic mode setting.
+2026-02-15T05:37:59.675037+00:00 ubuntu gnome-shell[2125]: Failed to initialize accelerated iGPU/dGPU framebuffer sharing: Not hardware accelerated
+2026-02-15T05:37:59.675181+00:00 ubuntu gnome-shell[2125]: Created gbm renderer for '/dev/dri/card0'
+2026-02-15T05:37:59.675206+00:00 ubuntu gnome-shell[2125]: Boot VGA GPU /dev/dri/card0 selected as primary
+2026-02-15T05:37:59.854924+00:00 ubuntu kernel: workqueue: e1000_watchdog [e1000] hogged CPU for >10000us 4 times, consider switching to WQ_UNBOUND
+2026-02-15T05:38:00.181785+00:00 ubuntu gnome-shell[2125]: Using public X11 display :0, (using :1 for managed services)
+2026-02-15T05:38:00.182186+00:00 ubuntu gnome-shell[2125]: Using Wayland display name 'wayland-0'
+2026-02-15T05:38:00.294899+00:00 ubuntu at-spi-dbus-bus.desktop[2138]: dbus-daemon[2138]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=1000 pid=2125 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:38:00.343748+00:00 ubuntu at-spi-dbus-bus.desktop[2138]: dbus-daemon[2138]: Successfully activated service 'org.a11y.atspi.Registry'
+2026-02-15T05:38:00.345180+00:00 ubuntu at-spi-dbus-bus.desktop[2196]: SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+2026-02-15T05:38:01.081865+00:00 ubuntu gnome-shell[2125]: Unset XDG_SESSION_ID, getCurrentSessionProxy() called outside a user session. Asking logind directly.
+2026-02-15T05:38:01.082171+00:00 ubuntu gnome-shell[2125]: Will monitor session 2
+2026-02-15T05:38:01.170967+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating service name='org.gnome.Shell.Screencast' requested by ':1.34' (uid=1000 pid=2125 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:38:01.265304+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating service name='org.gnome.Shell.CalendarServer' requested by ':1.34' (uid=1000 pid=2125 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:38:01.414647+00:00 ubuntu snapd-desktop-i[2200]: Failed to do gtk init. Waiting for a new session with desktop capabilities.
+2026-02-15T05:38:01.472985+00:00 ubuntu snapd-desktop-i[2200]: Checking session /org/freedesktop/login1/session/c1...
+2026-02-15T05:38:01.508314+00:00 ubuntu snapd-desktop-i[2200]: Checking session /org/freedesktop/login1/session/_32...
+2026-02-15T05:38:01.517596+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating via systemd: service name='org.gnome.evolution.dataserver.Sources5' unit='evolution-source-registry.service' requested by ':1.39' (uid=1000 pid=2209 comm="/usr/libexec/gnome-shell-calendar-server" label="unconfined")
+2026-02-15T05:38:01.528760+00:00 ubuntu snapd-desktop-i[2200]: Is a desktop session! Forcing a reload.
+2026-02-15T05:38:01.529346+00:00 ubuntu snapd-desktop-i[2200]: Loop exited. Forcing reload.
+2026-02-15T05:38:01.560246+00:00 ubuntu systemd[1873]: Starting evolution-source-registry.service - Evolution source registry...
+2026-02-15T05:38:01.560324+00:00 ubuntu systemd[1873]: snap.snapd-desktop-integration.snapd-desktop-integration.service: Consumed 3.175s CPU time.
+2026-02-15T05:38:01.644338+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating service name='org.gnome.Shell.Notifications' requested by ':1.34' (uid=1000 pid=2125 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:38:01.679882+00:00 ubuntu systemd[1873]: Started org.gnome.Shell@wayland.service - GNOME Shell on Wayland.
+2026-02-15T05:38:01.680110+00:00 ubuntu systemd[1873]: Reached target gnome-session-initialized.target - GNOME Session is initialized.
+2026-02-15T05:38:01.680195+00:00 ubuntu systemd[1873]: gnome-session-x11-services.target - GNOME session X11 services is inactive.
+2026-02-15T05:38:01.680232+00:00 ubuntu systemd[1873]: Dependency failed for org.gnome.SettingsDaemon.XSettings.service - GNOME XSettings service.
+2026-02-15T05:38:01.680260+00:00 ubuntu systemd[1873]: org.gnome.SettingsDaemon.XSettings.service: Job org.gnome.SettingsDaemon.XSettings.service/start failed with result 'dependency'.
+2026-02-15T05:38:01.680308+00:00 ubuntu systemd[1873]: gnome-session-x11-services-ready.target: Job gnome-session-x11-services-ready.target/verify-active failed with result 'dependency'.
+2026-02-15T05:38:01.680337+00:00 ubuntu systemd[1873]: Reached target gnome-session@ubuntu.target - GNOME Session (session: ubuntu).
+2026-02-15T05:38:01.680365+00:00 ubuntu systemd[1873]: Reached target org.gnome.SettingsDaemon.XSettings.target - GNOME XSettings target.
+2026-02-15T05:38:01.713825+00:00 ubuntu systemd[1873]: Starting gnome-session-signal-init.service - Signal initialization done to GNOME Session Manager...
+2026-02-15T05:38:01.727990+00:00 ubuntu systemd[1873]: Starting org.freedesktop.IBus.session.GNOME.service - IBus Daemon for GNOME...
+2026-02-15T05:38:01.744815+00:00 ubuntu systemd[1873]: Starting org.gnome.SettingsDaemon.A11ySettings.service - GNOME accessibility service...
+2026-02-15T05:38:01.753422+00:00 ubuntu systemd[1873]: Starting org.gnome.SettingsDaemon.Color.service - GNOME color management service...
+2026-02-15T05:38:01.765810+00:00 ubuntu systemd[1873]: Starting org.gnome.SettingsDaemon.Datetime.service - GNOME date & time service...
+2026-02-15T05:38:01.778906+00:00 ubuntu systemd[1873]: Starting org.gnome.SettingsDaemon.Housekeeping.service - GNOME maintenance of expirable data service...
+2026-02-15T05:38:01.790026+00:00 ubuntu systemd[1873]: Starting org.gnome.SettingsDaemon.Keyboard.service - GNOME keyboard configuration service...
+2026-02-15T05:38:01.790425+00:00 ubuntu gnome-shell[2125]: Gio.UnixInputStream has been moved to a separate platform-specific library. Please update your code to use GioUnix.InputStream instead.#0120 inhibit() ["resource:///org/gnome/shell/misc/loginManager.js":209:8]#0121 InterpretGeneratorResume() ["self-hosted":1461:33]#0122 AsyncFunctionNext() ["self-hosted":852:26]#0123 anonymous() ["resource:///org/gnome/shell/ui/init.js":21:19]
+2026-02-15T05:38:01.804233+00:00 ubuntu systemd[1873]: Starting org.gnome.SettingsDaemon.MediaKeys.service - GNOME keyboard shortcuts service...
+2026-02-15T05:38:01.825694+00:00 ubuntu systemd[1873]: Starting org.gnome.SettingsDaemon.Power.service - GNOME power management service...
+2026-02-15T05:38:01.838766+00:00 ubuntu systemd[1873]: Starting org.gnome.SettingsDaemon.PrintNotifications.service - GNOME printer notifications service...
+2026-02-15T05:38:01.850337+00:00 ubuntu systemd[1873]: Starting org.gnome.SettingsDaemon.Rfkill.service - GNOME RFKill support service...
+2026-02-15T05:38:01.858459+00:00 ubuntu systemd[1873]: Starting org.gnome.SettingsDaemon.ScreensaverProxy.service - GNOME FreeDesktop screensaver service...
+2026-02-15T05:38:01.865314+00:00 ubuntu systemd[1873]: Starting org.gnome.SettingsDaemon.Sharing.service - GNOME file sharing service...
+2026-02-15T05:38:01.873176+00:00 ubuntu spice-vdagent[2269]: vdagent virtio channel /dev/virtio-ports/com.redhat.spice.0 does not exist, exiting
+2026-02-15T05:38:01.873276+00:00 ubuntu systemd[1873]: Starting org.gnome.SettingsDaemon.Smartcard.service - GNOME smartcard service...
+2026-02-15T05:38:01.889204+00:00 ubuntu systemd[1873]: Starting org.gnome.SettingsDaemon.Sound.service - GNOME sound sample caching service...
+2026-02-15T05:38:01.991101+00:00 ubuntu systemd[1873]: Starting org.gnome.SettingsDaemon.Wacom.service - GNOME Wacom tablet support service...
+2026-02-15T05:38:02.002784+00:00 ubuntu systemd[1873]: Finished gnome-session-signal-init.service - Signal initialization done to GNOME Session Manager.
+2026-02-15T05:38:02.113806+00:00 ubuntu gnome-session-binary[2088]: Entering running state
+2026-02-15T05:38:02.117648+00:00 ubuntu gnome-session[2088]: gnome-session-binary[2088]: GnomeDesktop-WARNING: Could not create transient scope for PID 2269: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+2026-02-15T05:38:02.119471+00:00 ubuntu gnome-session-binary[2088]: GnomeDesktop-WARNING: Could not create transient scope for PID 2269: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+2026-02-15T05:38:02.193751+00:00 ubuntu at-spi2-registr[2196]: Failed to register client: GDBus.Error:org.gnome.SessionManager.AlreadyRegistered: Unable to register client
+2026-02-15T05:38:02.194279+00:00 ubuntu at-spi2-registr[2196]: Unable to register client with session manager
+2026-02-15T05:38:02.279911+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating via systemd: service name='org.gtk.vfs.UDisks2VolumeMonitor' unit='gvfs-udisks2-volume-monitor.service' requested by ':1.34' (uid=1000 pid=2125 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:38:02.281719+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.gnome.Shell.Notifications'
+2026-02-15T05:38:02.398487+00:00 ubuntu systemd[1873]: Started org.gnome.SettingsDaemon.A11ySettings.service - GNOME accessibility service.
+2026-02-15T05:38:02.407202+00:00 ubuntu systemd[1873]: Started org.gnome.SettingsDaemon.ScreensaverProxy.service - GNOME FreeDesktop screensaver service.
+2026-02-15T05:38:02.453716+00:00 ubuntu systemd[1873]: Started app-gnome-im\x2dlaunch-2306.scope - Application launched by gnome-session-binary.
+2026-02-15T05:38:02.473673+00:00 ubuntu systemd[1873]: Started app-gnome-org.gnome.Evolution\x2dalarm\x2dnotify-2290.scope - Application launched by gnome-session-binary.
+2026-02-15T05:38:02.480880+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating service name='org.freedesktop.portal.IBus' requested by ':1.48' (uid=1000 pid=2250 comm="/usr/bin/ibus-daemon --panel disable" label="unconfined")
+2026-02-15T05:38:02.499164+00:00 ubuntu systemd[1873]: Started app-gnome-org.gnome.SettingsDaemon.DiskUtilityNotify-2299.scope - Application launched by gnome-session-binary.
+2026-02-15T05:38:02.532119+00:00 ubuntu systemd[1873]: Started app-gnome-snap\x2duserd\x2dautostart-2297.scope - Application launched by gnome-session-binary.
+2026-02-15T05:38:02.538255+00:00 ubuntu systemd[1873]: app-gnome-ubuntu\x2dreport\x2don\x2dupgrade-2293.scope: PID 2293 vanished before we could move it to target cgroup '/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome-ubuntu\x2dreport\x2don\x2dupgrade-2293.scope', skipping: No such process
+2026-02-15T05:38:02.539699+00:00 ubuntu systemd[1873]: app-gnome-ubuntu\x2dreport\x2don\x2dupgrade-2293.scope: No PIDs left to attach to the scope's control group, refusing.
+2026-02-15T05:38:02.539794+00:00 ubuntu systemd[1873]: app-gnome-ubuntu\x2dreport\x2don\x2dupgrade-2293.scope: Failed with result 'resources'.
+2026-02-15T05:38:02.540058+00:00 ubuntu systemd[1873]: Failed to start app-gnome-ubuntu\x2dreport\x2don\x2dupgrade-2293.scope - Application launched by gnome-session-binary.
+2026-02-15T05:38:02.551089+00:00 ubuntu systemd[1873]: app-gnome-user\x2ddirs\x2dupdate\x2dgtk-2349.scope: PID 2349 vanished before we could move it to target cgroup '/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome-user\x2ddirs\x2dupdate\x2dgtk-2349.scope', skipping: No such process
+2026-02-15T05:38:02.551242+00:00 ubuntu systemd[1873]: app-gnome-user\x2ddirs\x2dupdate\x2dgtk-2349.scope: No PIDs left to attach to the scope's control group, refusing.
+2026-02-15T05:38:02.551317+00:00 ubuntu systemd[1873]: app-gnome-user\x2ddirs\x2dupdate\x2dgtk-2349.scope: Failed with result 'resources'.
+2026-02-15T05:38:02.553605+00:00 ubuntu systemd[1873]: Failed to start app-gnome-user\x2ddirs\x2dupdate\x2dgtk-2349.scope - Application launched by gnome-session-binary.
+2026-02-15T05:38:02.553829+00:00 ubuntu systemd[1873]: Reached target org.gnome.SettingsDaemon.A11ySettings.target - GNOME accessibility target.
+2026-02-15T05:38:02.555272+00:00 ubuntu systemd[1873]: Reached target org.gnome.SettingsDaemon.ScreensaverProxy.target - GNOME FreeDesktop screensaver target.
+2026-02-15T05:38:02.573651+00:00 ubuntu kernel: rfkill: input handler disabled
+2026-02-15T05:38:02.591861+00:00 ubuntu systemd[1873]: Starting gvfs-udisks2-volume-monitor.service - Virtual filesystem service - disk device monitor...
+2026-02-15T05:38:02.593797+00:00 ubuntu systemd[1873]: Started org.gnome.SettingsDaemon.Smartcard.service - GNOME smartcard service.
+2026-02-15T05:38:02.596562+00:00 ubuntu systemd[1873]: Started org.freedesktop.IBus.session.GNOME.service - IBus Daemon for GNOME.
+2026-02-15T05:38:02.598369+00:00 ubuntu systemd[1873]: Started org.gnome.SettingsDaemon.Sharing.service - GNOME file sharing service.
+2026-02-15T05:38:02.601202+00:00 ubuntu systemd[1873]: Started org.gnome.SettingsDaemon.Datetime.service - GNOME date & time service.
+2026-02-15T05:38:02.630651+00:00 ubuntu systemd[1873]: Started org.gnome.SettingsDaemon.Rfkill.service - GNOME RFKill support service.
+2026-02-15T05:38:02.650650+00:00 ubuntu systemd[1873]: Reached target org.gnome.SettingsDaemon.Datetime.target - GNOME date & time target.
+2026-02-15T05:38:02.650913+00:00 ubuntu systemd[1873]: Reached target org.gnome.SettingsDaemon.Rfkill.target - GNOME RFKill support target.
+2026-02-15T05:38:02.651003+00:00 ubuntu systemd[1873]: Reached target org.gnome.SettingsDaemon.Sharing.target - GNOME file sharing target.
+2026-02-15T05:38:02.651832+00:00 ubuntu systemd[1873]: Reached target org.gnome.SettingsDaemon.Smartcard.target - GNOME smartcard target.
+2026-02-15T05:38:02.696051+00:00 ubuntu systemd[1873]: Started org.gnome.SettingsDaemon.Housekeeping.service - GNOME maintenance of expirable data service.
+2026-02-15T05:38:02.696629+00:00 ubuntu systemd[1873]: Reached target org.gnome.SettingsDaemon.Housekeeping.target - GNOME maintenance of expirable data target.
+2026-02-15T05:38:02.702352+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.freedesktop.portal.IBus'
+2026-02-15T05:38:02.741151+00:00 ubuntu systemd[1873]: Started org.gnome.SettingsDaemon.Sound.service - GNOME sound sample caching service.
+2026-02-15T05:38:02.749361+00:00 ubuntu systemd[1873]: Reached target org.gnome.SettingsDaemon.Sound.target - GNOME sound sample caching target.
+2026-02-15T05:38:02.773941+00:00 ubuntu systemd[1873]: Started org.gnome.SettingsDaemon.PrintNotifications.service - GNOME printer notifications service.
+2026-02-15T05:38:02.774174+00:00 ubuntu systemd[1873]: Reached target org.gnome.SettingsDaemon.PrintNotifications.target - GNOME printer notifications target.
+2026-02-15T05:38:02.838170+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.gtk.vfs.UDisks2VolumeMonitor'
+2026-02-15T05:38:02.839742+00:00 ubuntu systemd[1873]: Started gvfs-udisks2-volume-monitor.service - Virtual filesystem service - disk device monitor.
+2026-02-15T05:38:02.862284+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating via systemd: service name='org.gtk.vfs.GPhoto2VolumeMonitor' unit='gvfs-gphoto2-volume-monitor.service' requested by ':1.34' (uid=1000 pid=2125 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:38:02.877160+00:00 ubuntu systemd[1873]: Starting gvfs-gphoto2-volume-monitor.service - Virtual filesystem service - digital camera monitor...
+2026-02-15T05:38:02.914323+00:00 ubuntu systemd[1]: systemd-timedated.service: Deactivated successfully.
+2026-02-15T05:38:02.927110+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.gtk.vfs.GPhoto2VolumeMonitor'
+2026-02-15T05:38:02.928901+00:00 ubuntu systemd[1873]: Started gvfs-gphoto2-volume-monitor.service - Virtual filesystem service - digital camera monitor.
+2026-02-15T05:38:02.945046+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating via systemd: service name='org.gtk.vfs.MTPVolumeMonitor' unit='gvfs-mtp-volume-monitor.service' requested by ':1.34' (uid=1000 pid=2125 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:38:02.958457+00:00 ubuntu systemd[1873]: Starting gvfs-mtp-volume-monitor.service - Virtual filesystem service - Media Transfer Protocol monitor...
+2026-02-15T05:38:02.977267+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.gtk.vfs.MTPVolumeMonitor'
+2026-02-15T05:38:02.980990+00:00 ubuntu systemd[1873]: Started gvfs-mtp-volume-monitor.service - Virtual filesystem service - Media Transfer Protocol monitor.
+2026-02-15T05:38:02.998717+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating via systemd: service name='org.gtk.vfs.AfcVolumeMonitor' unit='gvfs-afc-volume-monitor.service' requested by ':1.34' (uid=1000 pid=2125 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:38:03.011823+00:00 ubuntu systemd[1873]: Starting gvfs-afc-volume-monitor.service - Virtual filesystem service - Apple File Conduit monitor...
+2026-02-15T05:38:03.091933+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.gtk.vfs.AfcVolumeMonitor'
+2026-02-15T05:38:03.100106+00:00 ubuntu systemd[1873]: Started gvfs-afc-volume-monitor.service - Virtual filesystem service - Apple File Conduit monitor.
+2026-02-15T05:38:03.147295+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating service name='org.gnome.OnlineAccounts' requested by ':1.40' (uid=1000 pid=2231 comm="/usr/libexec/evolution-source-registry" label="unconfined")
+2026-02-15T05:38:03.194301+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating via systemd: service name='org.gtk.vfs.GoaVolumeMonitor' unit='gvfs-goa-volume-monitor.service' requested by ':1.34' (uid=1000 pid=2125 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:38:03.219542+00:00 ubuntu systemd[1873]: Starting gvfs-goa-volume-monitor.service - Virtual filesystem service - GNOME Online Accounts monitor...
+2026-02-15T05:38:03.294260+00:00 ubuntu goa-daemon[2495]: goa-daemon version 3.50.4 starting
+2026-02-15T05:38:03.332895+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.gnome.evolution.dataserver.Sources5'
+2026-02-15T05:38:03.336196+00:00 ubuntu systemd[1873]: Started evolution-source-registry.service - Evolution source registry.
+2026-02-15T05:38:03.346420+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating service name='org.gnome.Identity' requested by ':1.69' (uid=1000 pid=2495 comm="/usr/libexec/goa-daemon" label="unconfined")
+2026-02-15T05:38:03.387947+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.gnome.OnlineAccounts'
+2026-02-15T05:38:03.453388+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.gnome.Identity'
+2026-02-15T05:38:03.463182+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.gtk.vfs.GoaVolumeMonitor'
+2026-02-15T05:38:03.472537+00:00 ubuntu systemd[1873]: Started gvfs-goa-volume-monitor.service - Virtual filesystem service - GNOME Online Accounts monitor.
+2026-02-15T05:38:03.484197+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating via systemd: service name='org.gnome.evolution.dataserver.Calendar8' unit='evolution-calendar-factory.service' requested by ':1.39' (uid=1000 pid=2209 comm="/usr/libexec/gnome-shell-calendar-server" label="unconfined")
+2026-02-15T05:38:03.523034+00:00 ubuntu systemd[1873]: Starting evolution-calendar-factory.service - Evolution calendar service...
+2026-02-15T05:38:03.590095+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.gnome.Shell.CalendarServer'
+2026-02-15T05:38:03.671689+00:00 ubuntu systemd[1873]: snap.snapd-desktop-integration.snapd-desktop-integration.service: Scheduled restart job, restart counter is at 1.
+2026-02-15T05:38:03.697294+00:00 ubuntu systemd[1873]: Started snap.snapd-desktop-integration.snapd-desktop-integration.service - Service for snap application snapd-desktop-integration.snapd-desktop-integration.
+2026-02-15T05:38:03.753890+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.gnome.evolution.dataserver.Calendar8'
+2026-02-15T05:38:03.754350+00:00 ubuntu systemd[1873]: Started evolution-calendar-factory.service - Evolution calendar service.
+2026-02-15T05:38:03.821045+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating via systemd: service name='org.gnome.evolution.dataserver.AddressBook10' unit='evolution-addressbook-factory.service' requested by ':1.71' (uid=1000 pid=2515 comm="/usr/libexec/evolution-calendar-factory" label="unconfined")
+2026-02-15T05:38:03.852153+00:00 ubuntu systemd[1873]: Starting evolution-addressbook-factory.service - Evolution address book service...
+2026-02-15T05:38:04.091528+00:00 ubuntu gnome-shell[2125]: Error looking up permission: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for geolocation
+2026-02-15T05:38:04.186103+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.gnome.evolution.dataserver.AddressBook10'
+2026-02-15T05:38:04.190611+00:00 ubuntu systemd[1873]: Started evolution-addressbook-factory.service - Evolution address book service.
+2026-02-15T05:38:04.719662+00:00 ubuntu NetworkManager[1094]: <info>  [1771133884.7188] agent-manager: agent[b2578185e0258067,:1.76/org.gnome.Shell.NetworkAgent/1000]: agent registered
+2026-02-15T05:38:05.085298+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating via systemd: service name='ca.desrt.dconf' unit='dconf.service' requested by ':1.34' (uid=1000 pid=2125 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:38:05.103986+00:00 ubuntu systemd[1873]: Starting dconf.service - User preferences database...
+2026-02-15T05:38:05.144975+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'ca.desrt.dconf'
+2026-02-15T05:38:05.147193+00:00 ubuntu systemd[1873]: Started dconf.service - User preferences database.
+2026-02-15T05:38:05.502166+00:00 ubuntu gnome-shell[2125]: Failed to import DBusMenu, quicklists are not available: Error: Requiring Dbusmenu, version none: Typelib file for namespace 'Dbusmenu' (any version) not found
+2026-02-15T05:38:05.502807+00:00 ubuntu gnome-shell[2125]: message repeated 2 times: [ Failed to import DBusMenu, quicklists are not available: Error: Requiring Dbusmenu, version none: Typelib file for namespace 'Dbusmenu' (any version) not found]
+2026-02-15T05:38:05.543008+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating service name='org.freedesktop.FileManager1' requested by ':1.34' (uid=1000 pid=2125 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:38:05.855621+00:00 ubuntu nautilus[2656]: Connecting to org.freedesktop.Tracker3.Miner.Files
+2026-02-15T05:38:05.863468+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.freedesktop.FileManager1'
+2026-02-15T05:38:05.920784+00:00 ubuntu gnome-shell[2125]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+2026-02-15T05:38:05.920886+00:00 ubuntu gnome-shell[2125]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+2026-02-15T05:38:05.920899+00:00 ubuntu gnome-shell[2125]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+2026-02-15T05:38:05.920910+00:00 ubuntu gnome-shell[2125]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+2026-02-15T05:38:05.920922+00:00 ubuntu gnome-shell[2125]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+2026-02-15T05:38:05.921051+00:00 ubuntu gnome-shell[2125]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+2026-02-15T05:38:05.921106+00:00 ubuntu gnome-shell[2125]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+2026-02-15T05:38:05.921138+00:00 ubuntu gnome-shell[2125]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+2026-02-15T05:38:05.921191+00:00 ubuntu gnome-shell[2125]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+2026-02-15T05:38:05.921209+00:00 ubuntu gnome-shell[2125]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+2026-02-15T05:38:05.921227+00:00 ubuntu gnome-shell[2125]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+2026-02-15T05:38:05.921288+00:00 ubuntu gnome-shell[2125]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+2026-02-15T05:38:05.921323+00:00 ubuntu gnome-shell[2125]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+2026-02-15T05:38:05.921351+00:00 ubuntu gnome-shell[2125]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+2026-02-15T05:38:05.922587+00:00 ubuntu gnome-shell[2125]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+2026-02-15T05:38:05.922711+00:00 ubuntu gnome-shell[2125]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+2026-02-15T05:38:05.922742+00:00 ubuntu gnome-shell[2125]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+2026-02-15T05:38:05.922799+00:00 ubuntu gnome-shell[2125]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+2026-02-15T05:38:06.016501+00:00 ubuntu kernel: workqueue: e1000_watchdog [e1000] hogged CPU for >10000us 5 times, consider switching to WQ_UNBOUND
+2026-02-15T05:38:06.037109+00:00 ubuntu systemd[1873]: Started org.gnome.SettingsDaemon.Wacom.service - GNOME Wacom tablet support service.
+2026-02-15T05:38:06.042125+00:00 ubuntu systemd[1873]: Reached target org.gnome.SettingsDaemon.Wacom.target - GNOME Wacom tablet support target.
+2026-02-15T05:38:06.214308+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.gnome.Shell.Screencast'
+2026-02-15T05:38:06.217564+00:00 ubuntu gnome-shell[2125]: GNOME Shell started at Sun Feb 15 2026 05:38:01 GMT+0000 (Coordinated Universal Time)
+2026-02-15T05:38:06.218858+00:00 ubuntu gnome-shell[2125]: Registering session with GDM
+2026-02-15T05:38:06.248600+00:00 ubuntu gnome-shell[1413]: Shutting down GNOME Shell
+2026-02-15T05:38:06.267141+00:00 ubuntu gnome-shell[2125]: Launching DING process
+2026-02-15T05:38:06.325652+00:00 ubuntu gsd-sharing[1533]: Error releasing name org.gnome.SettingsDaemon.Sharing: The connection is closed
+2026-02-15T05:38:06.326004+00:00 ubuntu gsd-rfkill[1557]: Error releasing name org.gnome.SettingsDaemon.Rfkill: The connection is closed
+2026-02-15T05:38:06.339583+00:00 ubuntu gsd-smartcard[1576]: Error releasing name org.gnome.SettingsDaemon.Smartcard: The connection is closed
+2026-02-15T05:38:06.348428+00:00 ubuntu gsd-datetime[1583]: Error releasing name org.gnome.SettingsDaemon.Datetime: The connection is closed
+2026-02-15T05:38:06.348617+00:00 ubuntu gsd-screensaver[1595]: Error releasing name org.gnome.SettingsDaemon.ScreensaverProxy: The connection is closed
+2026-02-15T05:38:06.444480+00:00 ubuntu systemd[1]: session-c1.scope: Deactivated successfully.
+2026-02-15T05:38:06.450414+00:00 ubuntu systemd[1]: session-c1.scope: Consumed 32.790s CPU time.
+2026-02-15T05:38:06.530780+00:00 ubuntu gdm3: Gdm: Child process -1325 was already dead.
+2026-02-15T05:38:06.542335+00:00 ubuntu gdm3: Gdm: on_display_removed: assertion 'GDM_IS_REMOTE_DISPLAY (display)' failed
+2026-02-15T05:38:06.598145+00:00 ubuntu systemd[1873]: Started org.gnome.SettingsDaemon.Keyboard.service - GNOME keyboard configuration service.
+2026-02-15T05:38:06.600950+00:00 ubuntu systemd[1873]: Reached target org.gnome.SettingsDaemon.Keyboard.target - GNOME keyboard configuration target.
+2026-02-15T05:38:06.668435+00:00 ubuntu systemd[1873]: Started org.gnome.SettingsDaemon.Color.service - GNOME color management service.
+2026-02-15T05:38:06.671314+00:00 ubuntu systemd[1873]: Reached target org.gnome.SettingsDaemon.Color.target - GNOME color management target.
+2026-02-15T05:38:06.699152+00:00 ubuntu snapd-desktop-i[2608]: New theme: gtk=Yaru icon=Yaru cursor=Yaru, sound=Yaru
+2026-02-15T05:38:06.736342+00:00 ubuntu snapd-desktop-i[2608]: All available theme snaps installed
+2026-02-15T05:38:06.791504+00:00 ubuntu systemd[1873]: Started org.gnome.SettingsDaemon.MediaKeys.service - GNOME keyboard shortcuts service.
+2026-02-15T05:38:06.796299+00:00 ubuntu systemd[1873]: Reached target org.gnome.SettingsDaemon.MediaKeys.target - GNOME keyboard shortcuts target.
+2026-02-15T05:38:06.809633+00:00 ubuntu systemd[1873]: Started org.gnome.SettingsDaemon.Power.service - GNOME power management service.
+2026-02-15T05:38:06.810914+00:00 ubuntu systemd[1873]: Reached target org.gnome.SettingsDaemon.Power.target - GNOME power management target.
+2026-02-15T05:38:06.811019+00:00 ubuntu systemd[1873]: Reached target gnome-session.target - GNOME Session.
+2026-02-15T05:38:06.811184+00:00 ubuntu systemd[1873]: Reached target gnome-session-wayland@ubuntu.target - GNOME Wayland Session (session: ubuntu).
+2026-02-15T05:38:06.811239+00:00 ubuntu systemd[1873]: Reached target graphical-session.target - Current graphical user session.
+2026-02-15T05:38:06.811292+00:00 ubuntu systemd[1873]: gnome-initial-setup-first-login.service - GNOME Initial Setup was skipped because of an unmet condition check (ConditionPathExists=!/home/zooz/.config/gnome-initial-setup-done).
+2026-02-15T05:38:06.842388+00:00 ubuntu systemd[1873]: Starting tracker-miner-fs-3.service - Tracker file system data miner...
+2026-02-15T05:38:07.907510+00:00 ubuntu systemd[1873]: Started tracker-miner-fs-3.service - Tracker file system data miner.
+2026-02-15T05:38:07.967394+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 2153 of process 2125 owned by '1000' high priority at nice level 0.
+2026-02-15T05:38:07.969378+00:00 ubuntu rtkit-daemon[1345]: Supervising 15 threads of 9 processes of 2 users.
+2026-02-15T05:38:07.998192+00:00 ubuntu rtkit-daemon[1345]: Supervising 14 threads of 8 processes of 2 users.
+2026-02-15T05:38:08.017077+00:00 ubuntu rtkit-daemon[1345]: Supervising 14 threads of 8 processes of 2 users.
+2026-02-15T05:38:08.035236+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 2153 of process 2125 owned by '1000' RT at priority 20.
+2026-02-15T05:38:08.035412+00:00 ubuntu rtkit-daemon[1345]: Supervising 15 threads of 9 processes of 2 users.
+2026-02-15T05:38:08.131561+00:00 ubuntu gsd-media-keys[2271]: Failed to grab accelerator for keybinding settings:playback-repeat
+2026-02-15T05:38:08.131769+00:00 ubuntu gsd-media-keys[2271]: Failed to grab accelerator for keybinding settings:hibernate
+2026-02-15T05:38:08.201342+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating service name='org.gnome.ScreenSaver' requested by ':1.50' (uid=1000 pid=2274 comm="/usr/libexec/gsd-power" label="unconfined")
+2026-02-15T05:38:08.237050+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating via systemd: service name='org.freedesktop.portal.Desktop' unit='xdg-desktop-portal.service' requested by ':1.78' (uid=1000 pid=2656 comm="/usr/bin/nautilus --gapplication-service" label="nautilus (unconfined)")
+2026-02-15T05:38:08.258662+00:00 ubuntu systemd[1873]: Starting xdg-desktop-portal.service - Portal service...
+2026-02-15T05:38:08.348430+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating via systemd: service name='org.freedesktop.impl.portal.desktop.gnome' unit='xdg-desktop-portal-gnome.service' requested by ':1.90' (uid=1000 pid=2774 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+2026-02-15T05:38:08.359824+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.gnome.ScreenSaver'
+2026-02-15T05:38:08.375936+00:00 ubuntu systemd[1873]: Starting xdg-desktop-portal-gnome.service - Portal service (GNOME implementation)...
+2026-02-15T05:38:08.547588+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating via systemd: service name='org.gtk.vfs.Metadata' unit='gvfs-metadata.service' requested by ':1.80' (uid=1000 pid=2683 comm="gjs /usr/share/gnome-shell/extensions/ding@rasters" label="desktop-icons-ng (unconfined)")
+2026-02-15T05:38:08.582547+00:00 ubuntu systemd[1873]: Starting gvfs-metadata.service - Virtual filesystem metadata service...
+2026-02-15T05:38:08.680041+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.gtk.vfs.Metadata'
+2026-02-15T05:38:08.682710+00:00 ubuntu systemd[1873]: Started gvfs-metadata.service - Virtual filesystem metadata service.
+2026-02-15T05:38:08.700052+00:00 ubuntu gnome-shell[2125]: DING: Detected async api for thumbnails
+2026-02-15T05:38:08.973653+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.freedesktop.impl.portal.desktop.gnome'
+2026-02-15T05:38:08.982088+00:00 ubuntu systemd[1873]: Started xdg-desktop-portal-gnome.service - Portal service (GNOME implementation).
+2026-02-15T05:38:09.057845+00:00 ubuntu rtkit-daemon[1345]: Supervising 15 threads of 9 processes of 2 users.
+2026-02-15T05:38:09.066879+00:00 ubuntu rtkit-daemon[1345]: message repeated 2 times: [ Supervising 15 threads of 9 processes of 2 users.]
+2026-02-15T05:38:09.072871+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating via systemd: service name='org.freedesktop.impl.portal.desktop.gtk' unit='xdg-desktop-portal-gtk.service' requested by ':1.90' (uid=1000 pid=2774 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+2026-02-15T05:38:09.550540+00:00 ubuntu gnome-shell[2125]: Launching DING process
+2026-02-15T05:38:09.864876+00:00 ubuntu gnome-shell[2125]: DING: Detected async api for thumbnails
+2026-02-15T05:38:09.912688+00:00 ubuntu systemd[1873]: Starting xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation)...
+2026-02-15T05:38:09.991577+00:00 ubuntu gnome-shell[2125]: DING: (gjs:2812): Gjs-WARNING **: 05:38:09.990: GLib.unix_signal_add has been moved to a separate platform-specific library. Please update your code to use GLibUnix.signal_add instead.
+2026-02-15T05:38:09.991682+00:00 ubuntu gnome-shell[2125]: DING: 0 DesktopManager() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/desktopManager.js":264:12]
+2026-02-15T05:38:09.991695+00:00 ubuntu gnome-shell[2125]: DING: 1 anonymous() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":180:25]
+2026-02-15T05:38:09.991721+00:00 ubuntu gnome-shell[2125]: DING: 2 anonymous() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":197:20]
+2026-02-15T05:38:09.991736+00:00 ubuntu gnome-shell[2125]: DING: 3 <TOP LEVEL> ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":206:12]
+2026-02-15T05:38:10.088005+00:00 ubuntu gnome-shell[2125]: DING: ** Message: 05:38:10.054: Connecting to org.freedesktop.Tracker3.Miner.Files
+2026-02-15T05:38:11.093886+00:00 ubuntu systemd[1]: fprintd.service: Deactivated successfully.
+2026-02-15T05:38:13.130064+00:00 ubuntu gnome-shell[2125]: DING: DBus interface for Gvfs daemon (org.gtk.vfs.Metadata) is now available.
+2026-02-15T05:38:13.130504+00:00 ubuntu gnome-shell[2125]: DING: DBus interface for Switcheroo control (net.hadess.SwitcherooControl) is now available.
+2026-02-15T05:38:13.157130+00:00 ubuntu gnome-shell[2125]: Launching DING process
+2026-02-15T05:38:13.761997+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.freedesktop.impl.portal.desktop.gtk'
+2026-02-15T05:38:13.762177+00:00 ubuntu systemd[1873]: Started xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation).
+2026-02-15T05:38:13.991041+00:00 ubuntu gnome-shell[2125]: DING: Detected async api for thumbnails
+2026-02-15T05:38:14.298186+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.freedesktop.portal.Desktop'
+2026-02-15T05:38:14.299010+00:00 ubuntu systemd[1873]: Started xdg-desktop-portal.service - Portal service.
+2026-02-15T05:38:14.404224+00:00 ubuntu gnome-shell[2125]: DING: (gjs:2847): Gjs-WARNING **: 05:38:14.386: GLib.unix_signal_add has been moved to a separate platform-specific library. Please update your code to use GLibUnix.signal_add instead.
+2026-02-15T05:38:14.410371+00:00 ubuntu gnome-shell[2125]: DING: 0 DesktopManager() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/desktopManager.js":264:12]
+2026-02-15T05:38:14.411317+00:00 ubuntu gnome-shell[2125]: DING: 1 anonymous() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":180:25]
+2026-02-15T05:38:14.411391+00:00 ubuntu gnome-shell[2125]: DING: 2 anonymous() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":197:20]
+2026-02-15T05:38:14.411403+00:00 ubuntu gnome-shell[2125]: DING: 3 <TOP LEVEL> ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":206:12]
+2026-02-15T05:38:14.539348+00:00 ubuntu gnome-shell[2125]: DING: DBus interface for Switcheroo control (net.hadess.SwitcherooControl) is now available.
+2026-02-15T05:38:14.547922+00:00 ubuntu gnome-shell[2125]: DING: DBus interface for Gvfs daemon (org.gtk.vfs.Metadata) is now available.
+2026-02-15T05:38:14.709174+00:00 ubuntu gnome-shell[2125]: DING: ** Message: 05:38:14.639: Connecting to org.freedesktop.Tracker3.Miner.Files
+2026-02-15T05:38:14.735381+00:00 ubuntu gnome-shell[2125]: DING: DBus interface for Nautilus (org.gnome.Nautilus.FileOperations2) is now available.
+2026-02-15T05:38:14.735752+00:00 ubuntu gnome-shell[2125]: DING: DBus interface for Nautilus (org.freedesktop.FileManager1) is now available.
+2026-02-15T05:38:14.754551+00:00 ubuntu gnome-shell[2125]: Received notification for window. 0 notifications remaining.
+2026-02-15T05:38:15.177320+00:00 ubuntu gnome-shell[2125]: DING: GNOME nautilus 46.4
+2026-02-15T05:38:15.179886+00:00 ubuntu gnome-shell[2125]: DING: GNOME nautilus 46.4
+2026-02-15T05:38:16.869423+00:00 ubuntu systemd[1]: Stopping user@120.service - User Manager for UID 120...
+2026-02-15T05:38:16.887577+00:00 ubuntu systemd[1308]: Activating special unit exit.target...
+2026-02-15T05:38:16.891970+00:00 ubuntu systemd[1308]: Stopped target default.target - Main User Target.
+2026-02-15T05:38:16.893627+00:00 ubuntu systemd[1308]: Stopping dbus.service - D-Bus User Message Bus...
+2026-02-15T05:38:16.895268+00:00 ubuntu systemd[1308]: Stopping filter-chain.service - PipeWire filter chain daemon...
+2026-02-15T05:38:16.895468+00:00 ubuntu systemd[1308]: Stopping pipewire-pulse.service - PipeWire PulseAudio...
+2026-02-15T05:38:16.895673+00:00 ubuntu systemd[1308]: Stopping xdg-document-portal.service - flatpak document portal service...
+2026-02-15T05:38:16.902246+00:00 ubuntu systemd[1308]: Stopping xdg-permission-store.service - sandboxed app permission store...
+2026-02-15T05:38:16.947870+00:00 ubuntu systemd[1308]: Stopped xdg-permission-store.service - sandboxed app permission store.
+2026-02-15T05:38:16.953138+00:00 ubuntu systemd[1308]: Stopped filter-chain.service - PipeWire filter chain daemon.
+2026-02-15T05:38:16.965139+00:00 ubuntu systemd[1]: run-user-120-doc.mount: Deactivated successfully.
+2026-02-15T05:38:16.966060+00:00 ubuntu systemd[1308]: Stopped pipewire-pulse.service - PipeWire PulseAudio.
+2026-02-15T05:38:16.972416+00:00 ubuntu systemd[1308]: Stopped dbus.service - D-Bus User Message Bus.
+2026-02-15T05:38:16.980206+00:00 ubuntu systemd[1308]: Stopping wireplumber.service - Multimedia Service Session Manager...
+2026-02-15T05:38:16.993013+00:00 ubuntu wireplumber[1323]: stopped by signal: Terminated
+2026-02-15T05:38:17.002081+00:00 ubuntu wireplumber[1323]: disconnected from pipewire
+2026-02-15T05:38:17.061457+00:00 ubuntu systemd[1308]: Stopped wireplumber.service - Multimedia Service Session Manager.
+2026-02-15T05:38:17.061512+00:00 ubuntu systemd[1308]: wireplumber.service: Consumed 1.230s CPU time.
+2026-02-15T05:38:17.065973+00:00 ubuntu systemd[1308]: Stopping pipewire.service - PipeWire Multimedia Service...
+2026-02-15T05:38:17.068718+00:00 ubuntu systemd[1308]: xdg-document-portal.service: Main process exited, code=exited, status=20/n/a
+2026-02-15T05:38:17.091335+00:00 ubuntu systemd[1308]: xdg-document-portal.service: Failed with result 'exit-code'.
+2026-02-15T05:38:17.093014+00:00 ubuntu systemd[1308]: Stopped xdg-document-portal.service - flatpak document portal service.
+2026-02-15T05:38:17.115402+00:00 ubuntu systemd[1308]: Stopped pipewire.service - PipeWire Multimedia Service.
+2026-02-15T05:38:17.119087+00:00 ubuntu systemd[1308]: Removed slice session.slice - User Core Session Slice.
+2026-02-15T05:38:17.119142+00:00 ubuntu systemd[1308]: session.slice: Consumed 2.788s CPU time.
+2026-02-15T05:38:17.119223+00:00 ubuntu systemd[1308]: Stopped target basic.target - Basic System.
+2026-02-15T05:38:17.119246+00:00 ubuntu systemd[1308]: Stopped target paths.target - Paths.
+2026-02-15T05:38:17.128734+00:00 ubuntu systemd[1308]: Stopped ubuntu-report.path - Pending report trigger for Ubuntu Report.
+2026-02-15T05:38:17.130273+00:00 ubuntu systemd[1308]: Stopped target sockets.target - Sockets.
+2026-02-15T05:38:17.130299+00:00 ubuntu systemd[1308]: Stopped target timers.target - Timers.
+2026-02-15T05:38:17.130350+00:00 ubuntu systemd[1308]: Stopped launchpadlib-cache-clean.timer - Clean up old files in the Launchpadlib cache.
+2026-02-15T05:38:17.130369+00:00 ubuntu systemd[1308]: Stopped snap.firmware-updater.firmware-notifier.timer - Timer firmware-notifier for snap application firmware-updater.firmware-notifier.
+2026-02-15T05:38:17.134446+00:00 ubuntu systemd[1308]: Closed dbus.socket - D-Bus User Message Bus Socket.
+2026-02-15T05:38:17.134544+00:00 ubuntu systemd[1308]: Closed dirmngr.socket - GnuPG network certificate management daemon.
+2026-02-15T05:38:17.134570+00:00 ubuntu systemd[1308]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+2026-02-15T05:38:17.134589+00:00 ubuntu systemd[1308]: Closed gnome-keyring-daemon.socket - GNOME Keyring daemon.
+2026-02-15T05:38:17.134612+00:00 ubuntu systemd[1308]: Closed gpg-agent-browser.socket - GnuPG cryptographic agent and passphrase cache (access for web browsers).
+2026-02-15T05:38:17.134631+00:00 ubuntu systemd[1308]: Closed gpg-agent-extra.socket - GnuPG cryptographic agent and passphrase cache (restricted).
+2026-02-15T05:38:17.154878+00:00 ubuntu systemd[1308]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+2026-02-15T05:38:17.155183+00:00 ubuntu systemd[1308]: Closed gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.
+2026-02-15T05:38:17.157216+00:00 ubuntu systemd[1308]: Closed keyboxd.socket - GnuPG public key management service.
+2026-02-15T05:38:17.159593+00:00 ubuntu systemd[1308]: Closed pipewire-pulse.socket - PipeWire PulseAudio.
+2026-02-15T05:38:17.159619+00:00 ubuntu systemd[1308]: Closed pipewire.socket - PipeWire Multimedia System Sockets.
+2026-02-15T05:38:17.159638+00:00 ubuntu systemd[1308]: Closed pk-debconf-helper.socket - debconf communication socket.
+2026-02-15T05:38:17.159664+00:00 ubuntu systemd[1308]: Closed snapd.session-agent.socket - REST API socket for snapd user session agent.
+2026-02-15T05:38:17.159683+00:00 ubuntu systemd[1308]: Closed speech-dispatcher.socket - Speech Dispatcher Socket.
+2026-02-15T05:38:17.230449+00:00 ubuntu systemd[1308]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+2026-02-15T05:38:17.232960+00:00 ubuntu systemd[1308]: Removed slice app.slice - User Application Slice.
+2026-02-15T05:38:17.232988+00:00 ubuntu systemd[1308]: app.slice: Consumed 3.394s CPU time.
+2026-02-15T05:38:17.233007+00:00 ubuntu systemd[1308]: Reached target shutdown.target - Shutdown.
+2026-02-15T05:38:17.233026+00:00 ubuntu systemd[1308]: Finished systemd-exit.service - Exit the Session.
+2026-02-15T05:38:17.233044+00:00 ubuntu systemd[1308]: Reached target exit.target - Exit the Session.
+2026-02-15T05:38:17.279846+00:00 ubuntu systemd[1]: user@120.service: Deactivated successfully.
+2026-02-15T05:38:17.280407+00:00 ubuntu systemd[1]: Stopped user@120.service - User Manager for UID 120.
+2026-02-15T05:38:17.280974+00:00 ubuntu systemd[1]: user@120.service: Consumed 6.873s CPU time.
+2026-02-15T05:38:17.298778+00:00 ubuntu systemd[1]: Stopping user-runtime-dir@120.service - User Runtime Directory /run/user/120...
+2026-02-15T05:38:17.325526+00:00 ubuntu systemd[1]: run-user-120.mount: Deactivated successfully.
+2026-02-15T05:38:17.344232+00:00 ubuntu systemd[1]: user-runtime-dir@120.service: Deactivated successfully.
+2026-02-15T05:38:17.348273+00:00 ubuntu systemd[1]: Stopped user-runtime-dir@120.service - User Runtime Directory /run/user/120.
+2026-02-15T05:38:17.355460+00:00 ubuntu systemd[1]: Removed slice user-120.slice - User Slice of UID 120.
+2026-02-15T05:38:17.365707+00:00 ubuntu systemd[1]: user-120.slice: Consumed 39.705s CPU time.
+2026-02-15T05:38:18.586720+00:00 ubuntu systemd[1873]: Started snap.firefox.firefox-b8dfab7c-20ca-48e1-8db7-4bfad0b52d82.scope.
+2026-02-15T05:38:18.637326+00:00 ubuntu systemd[1]: tmp-snap.rootfs_VUdDSV.mount: Deactivated successfully.
+2026-02-15T05:38:18.823759+00:00 ubuntu firefox_firefox.desktop[2933]: update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/local/share/doc /usr/local/share/doc none bind,ro 0 0): cannot write to "/var/lib/snapd/hostfs/usr/local/share/doc" because it would affect the host in "/var/lib/snapd"
+2026-02-15T05:38:18.838982+00:00 ubuntu firefox_firefox.desktop[2933]: update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/gimp/2.0/help /usr/share/gimp/2.0/help none bind,ro 0 0): cannot write to "/var/lib/snapd/hostfs/usr/share/gimp/2.0/help" because it would affect the host in "/var/lib/snapd"
+2026-02-15T05:38:18.848994+00:00 ubuntu firefox_firefox.desktop[2933]: update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/gtk-doc /usr/share/gtk-doc none bind,ro 0 0): cannot write to "/var/lib/snapd/hostfs/usr/share/gtk-doc" because it would affect the host in "/var/lib/snapd"
+2026-02-15T05:38:18.850248+00:00 ubuntu firefox_firefox.desktop[2933]: update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/libreoffice/help /usr/share/libreoffice/help none bind,ro 0 0): cannot write to "/var/lib/snapd/hostfs/usr/share/libreoffice/help" because it would affect the host in "/var/lib/snapd"
+2026-02-15T05:38:18.851806+00:00 ubuntu firefox_firefox.desktop[2933]: update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/sphinx_rtd_theme /usr/share/sphinx_rtd_theme none bind,ro 0 0): cannot write to "/var/lib/snapd/hostfs/usr/share/sphinx_rtd_theme" because it would affect the host in "/var/lib/snapd"
+2026-02-15T05:38:18.862363+00:00 ubuntu firefox_firefox.desktop[2933]: update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/xubuntu-docs /usr/share/xubuntu-docs none bind,ro 0 0): cannot write to "/var/lib/snapd/hostfs/usr/share/xubuntu-docs" because it would affect the host in "/var/lib/snapd"
+2026-02-15T05:38:20.782748+00:00 ubuntu firefox[2916]: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+2026-02-15T05:38:22.465831+00:00 ubuntu kernel: workqueue: blk_mq_run_work_fn hogged CPU for >10000us 35 times, consider switching to WQ_UNBOUND
+2026-02-15T05:38:23.519377+00:00 ubuntu tracker-miner-fs-3[3029]: (tracker-extract-3:3029): GLib-GIO-WARNING **: 05:38:23.518: Error creating IO channel for /proc/self/mountinfo: Invalid argument (g-io-error-quark, 13)
+2026-02-15T05:38:25.575305+00:00 ubuntu kernel: audit: type=1400 audit(1771133905.573:166): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/implicit_layer.d/" pid=3008 comm="glxtest" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:25.588011+00:00 ubuntu kernel: audit: type=1400 audit(1771133905.585:167): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/implicit_layer.d/" pid=3008 comm="glxtest" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:25.588074+00:00 ubuntu kernel: audit: type=1400 audit(1771133905.586:168): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/icd.d/" pid=3008 comm="glxtest" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:26.044176+00:00 ubuntu kernel: audit: type=1400 audit(1771133906.027:169): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/icd.d/" pid=3008 comm="glxtest" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:26.049319+00:00 ubuntu kernel: audit: type=1400 audit(1771133906.041:170): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/implicit_layer.d/" pid=3008 comm="glxtest" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:26.056662+00:00 ubuntu kernel: audit: type=1400 audit(1771133906.054:171): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/implicit_layer.d/" pid=3008 comm="glxtest" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:26.056727+00:00 ubuntu kernel: audit: type=1400 audit(1771133906.054:172): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/icd.d/" pid=3008 comm="glxtest" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:26.057534+00:00 ubuntu kernel: audit: type=1400 audit(1771133906.055:173): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/implicit_layer.d/" pid=3008 comm="glxtest" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:26.063792+00:00 ubuntu kernel: audit: type=1400 audit(1771133906.056:174): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/implicit_layer.d/" pid=3008 comm="glxtest" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:26.063861+00:00 ubuntu kernel: audit: type=1400 audit(1771133906.061:175): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/implicit_layer.d/" pid=3008 comm="glxtest" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:27.073649+00:00 ubuntu dbus-daemon[675]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.103' (uid=1000 pid=2916 comm="/snap/firefox/7766/usr/lib/firefox/firefox" label="snap.firefox.firefox (enforce)")
+2026-02-15T05:38:27.097288+00:00 ubuntu systemd[1]: Starting systemd-timedated.service - Time & Date Service...
+2026-02-15T05:38:27.333838+00:00 ubuntu dbus-daemon[675]: [system] Successfully activated service 'org.freedesktop.timedate1'
+2026-02-15T05:38:27.334464+00:00 ubuntu systemd[1]: Started systemd-timedated.service - Time & Date Service.
+2026-02-15T05:38:28.547723+00:00 ubuntu kernel: workqueue: ata_sff_pio_task hogged CPU for >10000us 5 times, consider switching to WQ_UNBOUND
+2026-02-15T05:38:28.625033+00:00 ubuntu rtkit-daemon[1345]: Supervising 8 threads of 5 processes of 1 users.
+2026-02-15T05:38:29.359373+00:00 ubuntu rtkit-daemon[1345]: message repeated 3 times: [ Supervising 8 threads of 5 processes of 1 users.]
+2026-02-15T05:38:29.440923+00:00 ubuntu rtkit-daemon[1345]: Successfully made thread 3179 of process 2916 owned by '1000' RT at priority 10.
+2026-02-15T05:38:29.441073+00:00 ubuntu rtkit-daemon[1345]: Supervising 9 threads of 6 processes of 1 users.
+2026-02-15T05:38:29.731259+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating service name='org.gnome.Nautilus' requested by ':1.34' (uid=1000 pid=2125 comm="/usr/bin/gnome-shell" label="unconfined")
+2026-02-15T05:38:29.888345+00:00 ubuntu gnome-shell[2125]: meta_window_set_stack_position_no_sync: assertion 'window->stack_position >= 0' failed
+2026-02-15T05:38:30.031716+00:00 ubuntu nautilus[3185]: Connecting to org.freedesktop.Tracker3.Miner.Files
+2026-02-15T05:38:30.034169+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.gnome.Nautilus'
+2026-02-15T05:38:31.334711+00:00 ubuntu kernel: workqueue: blk_mq_requeue_work hogged CPU for >10000us 19 times, consider switching to WQ_UNBOUND
+2026-02-15T05:38:31.453906+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating service name='io.snapcraft.Settings' requested by ':1.105' (uid=1000 pid=3213 comm="dbus-send --print-reply=literal --session --dest=i" label="snap.firefox.firefox (enforce)")
+2026-02-15T05:38:31.510927+00:00 ubuntu org.gnome.Nautilus[3185]: libEGL warning: failed to get driver name for fd -1
+2026-02-15T05:38:31.515768+00:00 ubuntu org.gnome.Nautilus[3185]: libEGL warning: MESA-LOADER: failed to retrieve device information
+2026-02-15T05:38:31.515858+00:00 ubuntu org.gnome.Nautilus[3185]: libEGL warning: failed to get driver name for fd -1
+2026-02-15T05:38:31.637437+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'io.snapcraft.Settings'
+2026-02-15T05:38:31.720676+00:00 ubuntu io.snapcraft.Settings[3216]: userd.go:93: Starting snap userd
+2026-02-15T05:38:33.355326+00:00 ubuntu rtkit-daemon[1345]: Supervising 9 threads of 6 processes of 1 users.
+2026-02-15T05:38:33.356828+00:00 ubuntu rtkit-daemon[1345]: Supervising 9 threads of 6 processes of 1 users.
+2026-02-15T05:38:33.456987+00:00 ubuntu gnome-shell[3380]: VMware: No 3D enabled (0, Success).
+2026-02-15T05:38:33.457562+00:00 ubuntu gnome-shell[3380]: libEGL warning: egl: failed to create dri2 screen
+2026-02-15T05:38:33.460312+00:00 ubuntu gnome-shell[3380]: VMware: No 3D enabled (0, Success).
+2026-02-15T05:38:33.460444+00:00 ubuntu gnome-shell[3380]: libEGL warning: egl: failed to create dri2 screen
+2026-02-15T05:38:33.464476+00:00 ubuntu gnome-shell[3380]: VMware: No 3D enabled (0, Success).
+2026-02-15T05:38:33.466095+00:00 ubuntu gnome-shell[3380]: libEGL warning: egl: failed to create dri2 screen
+2026-02-15T05:38:33.470335+00:00 ubuntu gnome-shell[3380]: Failed to initialize glamor, falling back to sw
+2026-02-15T05:38:33.477313+00:00 ubuntu gnome-shell[3380]: VMware: No 3D enabled (0, Success).
+2026-02-15T05:38:33.484313+00:00 ubuntu gnome-shell[3380]: VMware: No 3D enabled (0, Success).
+2026-02-15T05:38:33.594925+00:00 ubuntu gnome-shell[3410]: The XKEYBOARD keymap compiler (xkbcomp) reports:
+2026-02-15T05:38:33.595009+00:00 ubuntu gnome-shell[3410]: > Warning:          Could not resolve keysym XF86CameraAccessEnable
+2026-02-15T05:38:33.595031+00:00 ubuntu gnome-shell[3410]: > Warning:          Could not resolve keysym XF86CameraAccessDisable
+2026-02-15T05:38:33.595044+00:00 ubuntu gnome-shell[3410]: > Warning:          Could not resolve keysym XF86CameraAccessToggle
+2026-02-15T05:38:33.595090+00:00 ubuntu gnome-shell[3410]: > Warning:          Could not resolve keysym XF86NextElement
+2026-02-15T05:38:33.595104+00:00 ubuntu gnome-shell[3410]: > Warning:          Could not resolve keysym XF86PreviousElement
+2026-02-15T05:38:33.595118+00:00 ubuntu gnome-shell[3410]: > Warning:          Could not resolve keysym XF86AutopilotEngageToggle
+2026-02-15T05:38:33.595131+00:00 ubuntu gnome-shell[3410]: > Warning:          Could not resolve keysym XF86MarkWaypoint
+2026-02-15T05:38:33.595248+00:00 ubuntu gnome-shell[3410]: > Warning:          Could not resolve keysym XF86Sos
+2026-02-15T05:38:33.595263+00:00 ubuntu gnome-shell[3410]: > Warning:          Could not resolve keysym XF86NavChart
+2026-02-15T05:38:33.595276+00:00 ubuntu gnome-shell[3410]: > Warning:          Could not resolve keysym XF86FishingChart
+2026-02-15T05:38:33.595290+00:00 ubuntu gnome-shell[3410]: > Warning:          Could not resolve keysym XF86SingleRangeRadar
+2026-02-15T05:38:33.595303+00:00 ubuntu gnome-shell[3410]: > Warning:          Could not resolve keysym XF86DualRangeRadar
+2026-02-15T05:38:33.595316+00:00 ubuntu gnome-shell[3410]: > Warning:          Could not resolve keysym XF86RadarOverlay
+2026-02-15T05:38:33.595330+00:00 ubuntu gnome-shell[3410]: > Warning:          Could not resolve keysym XF86TraditionalSonar
+2026-02-15T05:38:33.595343+00:00 ubuntu gnome-shell[3410]: > Warning:          Could not resolve keysym XF86ClearvuSonar
+2026-02-15T05:38:33.595356+00:00 ubuntu gnome-shell[3410]: > Warning:          Could not resolve keysym XF86SidevuSonar
+2026-02-15T05:38:33.596075+00:00 ubuntu gnome-shell[3410]: > Warning:          Could not resolve keysym XF86NavInfo
+2026-02-15T05:38:33.598257+00:00 ubuntu gnome-shell[3410]: Errors from xkbcomp are not fatal to the X server
+2026-02-15T05:38:33.653116+00:00 ubuntu systemd[1873]: Reached target gnome-session-x11-services.target - GNOME session X11 services.
+2026-02-15T05:38:33.679271+00:00 ubuntu systemd[1873]: Starting org.gnome.SettingsDaemon.XSettings.service - GNOME XSettings service...
+2026-02-15T05:38:33.686813+00:00 ubuntu gnome-shell[3416]: The XKEYBOARD keymap compiler (xkbcomp) reports:
+2026-02-15T05:38:33.686996+00:00 ubuntu gnome-shell[3416]: > Warning:          Unsupported maximum keycode 708, clipping.
+2026-02-15T05:38:33.687010+00:00 ubuntu gnome-shell[3416]: >                   X11 cannot support keycodes above 255.
+2026-02-15T05:38:33.703314+00:00 ubuntu gnome-shell[3416]: > Warning:          Could not resolve keysym XF86CameraAccessEnable
+2026-02-15T05:38:33.703587+00:00 ubuntu gnome-shell[3416]: > Warning:          Could not resolve keysym XF86CameraAccessDisable
+2026-02-15T05:38:33.703600+00:00 ubuntu gnome-shell[3416]: > Warning:          Could not resolve keysym XF86CameraAccessToggle
+2026-02-15T05:38:33.704086+00:00 ubuntu gnome-shell[3416]: > Warning:          Could not resolve keysym XF86NextElement
+2026-02-15T05:38:33.704200+00:00 ubuntu gnome-shell[3416]: > Warning:          Could not resolve keysym XF86PreviousElement
+2026-02-15T05:38:33.704212+00:00 ubuntu gnome-shell[3416]: > Warning:          Could not resolve keysym XF86AutopilotEngageToggle
+2026-02-15T05:38:33.704224+00:00 ubuntu gnome-shell[3416]: > Warning:          Could not resolve keysym XF86MarkWaypoint
+2026-02-15T05:38:33.704387+00:00 ubuntu gnome-shell[3416]: > Warning:          Could not resolve keysym XF86Sos
+2026-02-15T05:38:33.704411+00:00 ubuntu gnome-shell[3416]: > Warning:          Could not resolve keysym XF86NavChart
+2026-02-15T05:38:33.704600+00:00 ubuntu gnome-shell[3416]: > Warning:          Could not resolve keysym XF86FishingChart
+2026-02-15T05:38:33.704635+00:00 ubuntu gnome-shell[3416]: > Warning:          Could not resolve keysym XF86SingleRangeRadar
+2026-02-15T05:38:33.704655+00:00 ubuntu gnome-shell[3416]: > Warning:          Could not resolve keysym XF86DualRangeRadar
+2026-02-15T05:38:33.704681+00:00 ubuntu gnome-shell[3416]: > Warning:          Could not resolve keysym XF86RadarOverlay
+2026-02-15T05:38:33.704704+00:00 ubuntu gnome-shell[3416]: > Warning:          Could not resolve keysym XF86TraditionalSonar
+2026-02-15T05:38:33.704730+00:00 ubuntu gnome-shell[3416]: > Warning:          Could not resolve keysym XF86ClearvuSonar
+2026-02-15T05:38:33.704772+00:00 ubuntu gnome-shell[3416]: > Warning:          Could not resolve keysym XF86SidevuSonar
+2026-02-15T05:38:33.704812+00:00 ubuntu gnome-shell[3416]: > Warning:          Could not resolve keysym XF86NavInfo
+2026-02-15T05:38:33.705186+00:00 ubuntu gnome-shell[3416]: Errors from xkbcomp are not fatal to the X server
+2026-02-15T05:38:34.672934+00:00 ubuntu kernel: workqueue: e1000_watchdog [e1000] hogged CPU for >10000us 7 times, consider switching to WQ_UNBOUND
+2026-02-15T05:38:35.572285+00:00 ubuntu systemd[1873]: Started org.gnome.SettingsDaemon.XSettings.service - GNOME XSettings service.
+2026-02-15T05:38:35.572390+00:00 ubuntu systemd[1873]: Reached target gnome-session-x11-services-ready.target - GNOME session X11 services.
+2026-02-15T05:38:35.646232+00:00 ubuntu org.gnome.Nautilus[3185]: MESA: error: ZINK: failed to choose pdev
+2026-02-15T05:38:35.655165+00:00 ubuntu org.gnome.Nautilus[3185]: libEGL warning: egl: failed to create dri2 screen
+2026-02-15T05:38:35.997480+00:00 ubuntu gnome-shell[3590]: libEGL warning: DRI3 error: Could not get DRI3 device
+2026-02-15T05:38:35.998020+00:00 ubuntu gnome-shell[3590]: libEGL warning: Ensure your X server supports DRI3 to get accelerated rendering
+2026-02-15T05:38:36.758349+00:00 ubuntu systemd[1]: systemd-localed.service: Deactivated successfully.
+2026-02-15T05:38:36.940135+00:00 ubuntu systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+2026-02-15T05:38:39.060246+00:00 ubuntu geoclue[1726]: Service not used for 60 seconds. Shutting down..
+2026-02-15T05:38:39.141405+00:00 ubuntu systemd[1]: geoclue.service: Deactivated successfully.
+2026-02-15T05:38:40.152026+00:00 ubuntu rtkit-daemon[1345]: Supervising 9 threads of 6 processes of 1 users.
+2026-02-15T05:38:40.242146+00:00 ubuntu rtkit-daemon[1345]: message repeated 3 times: [ Supervising 9 threads of 6 processes of 1 users.]
+2026-02-15T05:38:40.585730+00:00 ubuntu dbus-daemon[675]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.108' (uid=1000 pid=3185 comm="/usr/bin/nautilus --gapplication-service" label="nautilus (unconfined)")
+2026-02-15T05:38:40.642255+00:00 ubuntu systemd[1]: Starting systemd-hostnamed.service - Hostname Service...
+2026-02-15T05:38:41.098948+00:00 ubuntu dbus-daemon[675]: [system] Successfully activated service 'org.freedesktop.hostname1'
+2026-02-15T05:38:41.106110+00:00 ubuntu systemd[1]: Started systemd-hostnamed.service - Hostname Service.
+2026-02-15T05:38:41.955962+00:00 ubuntu kernel: kauditd_printk_skb: 7 callbacks suppressed
+2026-02-15T05:38:41.958569+00:00 ubuntu kernel: audit: type=1400 audit(1771133921.952:183): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:43.470284+00:00 ubuntu gnome-shell[2125]: Invalid sequence for VSYNC frame info
+2026-02-15T05:38:43.711188+00:00 ubuntu rtkit-daemon[1345]: Supervising 9 threads of 6 processes of 1 users.
+2026-02-15T05:38:44.923694+00:00 ubuntu kernel: workqueue: e1000_watchdog [e1000] hogged CPU for >10000us 11 times, consider switching to WQ_UNBOUND
+2026-02-15T05:38:47.416771+00:00 ubuntu kernel: audit: type=1400 audit(1771133927.410:184): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:46.645998+00:00 ubuntu rtkit-daemon[1345]: message repeated 3 times: [ Supervising 9 threads of 6 processes of 1 users.]
+2026-02-15T05:38:51.182165+00:00 ubuntu firefox_firefox.desktop[2916]: libEGL warning: failed to get driver name for fd -1
+2026-02-15T05:38:51.182303+00:00 ubuntu firefox_firefox.desktop[2916]: libEGL warning: MESA-LOADER: failed to retrieve device information
+2026-02-15T05:38:51.182348+00:00 ubuntu firefox_firefox.desktop[2916]: libEGL warning: failed to get driver name for fd -1
+2026-02-15T05:38:51.271474+00:00 ubuntu kernel: audit: type=1400 audit(1771133931.262:185): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/implicit_layer.d/" pid=2916 comm="CanvasRenderer" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:51.271490+00:00 ubuntu kernel: audit: type=1400 audit(1771133931.262:186): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/implicit_layer.d/" pid=2916 comm="CanvasRenderer" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:51.271491+00:00 ubuntu kernel: audit: type=1400 audit(1771133931.267:187): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/icd.d/" pid=2916 comm="CanvasRenderer" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:51.347166+00:00 ubuntu kernel: audit: type=1400 audit(1771133931.340:188): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/icd.d/" pid=2916 comm="CanvasRenderer" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:51.355478+00:00 ubuntu kernel: audit: type=1400 audit(1771133931.351:189): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/implicit_layer.d/" pid=2916 comm="CanvasRenderer" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:51.361994+00:00 ubuntu kernel: audit: type=1400 audit(1771133931.353:190): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/implicit_layer.d/" pid=2916 comm="CanvasRenderer" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:51.364311+00:00 ubuntu kernel: audit: type=1400 audit(1771133931.357:191): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/icd.d/" pid=2916 comm="CanvasRenderer" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:51.376225+00:00 ubuntu kernel: audit: type=1400 audit(1771133931.370:192): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/implicit_layer.d/" pid=2916 comm="CanvasRenderer" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:51.378366+00:00 ubuntu kernel: audit: type=1400 audit(1771133931.370:193): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/vulkan/implicit_layer.d/" pid=2916 comm="CanvasRenderer" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:38:51.389458+00:00 ubuntu firefox_firefox.desktop[2916]: MESA: error: ZINK: vkEnumeratePhysicalDevices failed (VK_ERROR_INITIALIZATION_FAILED)
+2026-02-15T05:38:51.389528+00:00 ubuntu firefox_firefox.desktop[2916]: MESA: error: ZINK: failed to choose pdev
+2026-02-15T05:38:51.402274+00:00 ubuntu firefox_firefox.desktop[2916]: libEGL warning: egl: failed to create dri2 screen
+2026-02-15T05:38:54.542206+00:00 ubuntu gnome-shell[2125]: libinput error: event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 28ms, your system is too slow
+2026-02-15T05:38:57.330453+00:00 ubuntu kernel: workqueue: blk_mq_run_work_fn hogged CPU for >10000us 67 times, consider switching to WQ_UNBOUND
+2026-02-15T05:38:57.478079+00:00 ubuntu systemd[1]: systemd-timedated.service: Deactivated successfully.
+2026-02-15T05:39:02.302343+00:00 ubuntu systemd[1873]: Started app-gnome-ubuntu\x2dadvantage\x2dnotification-4165.scope - Application launched by gnome-session-binary.
+2026-02-15T05:39:02.310916+00:00 ubuntu systemd[1873]: Started app-gnome-update\x2dnotifier-4170.scope - Application launched by gnome-session-binary.
+2026-02-15T05:39:02.853131+00:00 ubuntu kernel: kauditd_printk_skb: 8 callbacks suppressed
+2026-02-15T05:39:02.855508+00:00 ubuntu kernel: audit: type=1400 audit(1771133942.846:202): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:39:03.413645+00:00 ubuntu kernel: workqueue: ata_sff_pio_task hogged CPU for >10000us 7 times, consider switching to WQ_UNBOUND
+2026-02-15T05:39:07.437169+00:00 ubuntu kernel: workqueue: e1000_watchdog [e1000] hogged CPU for >10000us 19 times, consider switching to WQ_UNBOUND
+2026-02-15T05:39:08.327167+00:00 ubuntu kernel: audit: type=1400 audit(1771133948.317:203): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:39:13.330456+00:00 ubuntu systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+2026-02-15T05:39:19.250315+00:00 ubuntu kernel: audit: type=1400 audit(1771133959.246:204): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:39:29.488377+00:00 ubuntu kernel: audit: type=1400 audit(1771133969.485:205): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:39:34.543212+00:00 ubuntu kernel: audit: type=1400 audit(1771133974.532:206): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:39:38.194176+00:00 ubuntu kernel: clocksource: Long readout interval, skipping watchdog check: cs_nsec: 1385119610 wd_nsec: 1385118566
+2026-02-15T05:39:52.102978+00:00 ubuntu kernel: audit: type=1400 audit(1771133992.101:207): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:39:57.127335+00:00 ubuntu kernel: audit: type=1400 audit(1771133997.125:208): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:40:02.373322+00:00 ubuntu kernel: audit: type=1400 audit(1771134002.369:209): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:40:07.375538+00:00 ubuntu kernel: audit: type=1400 audit(1771134007.370:210): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:40:12.391866+00:00 ubuntu kernel: audit: type=1400 audit(1771134012.383:211): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:40:12.414953+00:00 ubuntu systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+2026-02-15T05:40:12.428773+00:00 ubuntu systemd[1]: sysstat-collect.service: Deactivated successfully.
+2026-02-15T05:40:12.428978+00:00 ubuntu systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+2026-02-15T05:40:17.412574+00:00 ubuntu kernel: audit: type=1400 audit(1771134017.409:212): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:40:22.456005+00:00 ubuntu kernel: audit: type=1400 audit(1771134022.454:213): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:40:27.533961+00:00 ubuntu kernel: audit: type=1400 audit(1771134027.530:214): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:40:32.705668+00:00 ubuntu kernel: audit: type=1400 audit(1771134032.698:215): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:40:37.782950+00:00 ubuntu kernel: audit: type=1400 audit(1771134037.781:216): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:40:42.788816+00:00 ubuntu kernel: audit: type=1400 audit(1771134042.785:217): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:40:47.825238+00:00 ubuntu kernel: audit: type=1400 audit(1771134047.819:218): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:40:51.238323+00:00 ubuntu systemd[1873]: Started app-gnome-org.gnome.Terminal-4304.scope - Application launched by gnome-shell.
+2026-02-15T05:40:52.105279+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Activating via systemd: service name='org.gnome.Terminal' unit='gnome-terminal-server.service' requested by ':1.124' (uid=1000 pid=4308 comm="/usr/bin/gnome-terminal.real" label="unconfined")
+2026-02-15T05:40:52.709416+00:00 ubuntu systemd[1873]: Created slice app-org.gnome.Terminal.slice - Slice /app/org.gnome.Terminal.
+2026-02-15T05:40:52.723603+00:00 ubuntu systemd[1873]: Starting gnome-terminal-server.service - GNOME Terminal Server...
+2026-02-15T05:40:52.882164+00:00 ubuntu kernel: audit: type=1400 audit(1771134052.880:219): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:40:53.970047+00:00 ubuntu dbus-daemon[1892]: [session uid=1000 pid=1892] Successfully activated service 'org.gnome.Terminal'
+2026-02-15T05:40:53.978244+00:00 ubuntu systemd[1873]: Started gnome-terminal-server.service - GNOME Terminal Server.
+2026-02-15T05:40:54.135946+00:00 ubuntu gnome-shell[2125]: meta_window_set_stack_position_no_sync: assertion 'window->stack_position >= 0' failed
+2026-02-15T05:40:54.292195+00:00 ubuntu systemd[1873]: Started vte-spawn-673882d1-a256-4ded-85b7-fa2d14107231.scope - VTE child process 4323 launched by gnome-terminal-server process 4314.
+2026-02-15T05:40:54.411892+00:00 ubuntu kernel: workqueue: css_killed_work_fn hogged CPU for >10000us 7 times, consider switching to WQ_UNBOUND
+2026-02-15T05:41:27.551416+00:00 ubuntu kernel: audit: type=1400 audit(1771134087.546:220): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:41:32.769248+00:00 ubuntu kernel: audit: type=1400 audit(1771134092.764:221): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:41:37.787497+00:00 ubuntu kernel: audit: type=1400 audit(1771134097.782:222): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:41:42.833333+00:00 ubuntu kernel: audit: type=1400 audit(1771134102.831:223): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:41:47.872712+00:00 ubuntu kernel: audit: type=1400 audit(1771134107.871:224): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2026-02-15T05:41:52.892473+00:00 ubuntu kernel: audit: type=1400 audit(1771134112.890:225): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=2916 comm="MemoryPoller" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0

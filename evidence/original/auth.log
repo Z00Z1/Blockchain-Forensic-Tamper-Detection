@@ -1,0 +1,28 @@
+2026-02-15T05:36:46.892166+00:00 ubuntu gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2026-02-15T05:36:46.975388+00:00 ubuntu systemd-logind[916]: New session c1 of user gdm.
+2026-02-15T05:36:47.045576+00:00 ubuntu (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2026-02-15T05:36:56.031299+00:00 ubuntu polkitd[788]: Registered Authentication Agent for unix-session:c1 (system bus name :1.38 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-02-15T05:37:48.166684+00:00 ubuntu gdm-password]: gkr-pam: unable to locate daemon control file
+2026-02-15T05:37:48.166941+00:00 ubuntu gdm-password]: gkr-pam: stashed password to try later in open session
+2026-02-15T05:37:48.626855+00:00 ubuntu gdm-password]: pam_unix(gdm-password:session): session opened for user zooz(uid=1000) by zooz(uid=0)
+2026-02-15T05:37:48.746394+00:00 ubuntu systemd-logind[916]: New session 2 of user zooz.
+2026-02-15T05:37:48.954286+00:00 ubuntu (systemd): pam_unix(systemd-user:session): session opened for user zooz(uid=1000) by zooz(uid=0)
+2026-02-15T05:37:57.428640+00:00 ubuntu gdm-password]: gkr-pam: unlocked login keyring
+2026-02-15T05:37:58.892981+00:00 ubuntu gnome-keyring-daemon[1893]: The Secret Service was already initialized
+2026-02-15T05:37:58.895937+00:00 ubuntu gnome-keyring-daemon[2111]: discover_other_daemon: 1
+2026-02-15T05:37:58.915014+00:00 ubuntu gnome-keyring-daemon[1893]: The PKCS#11 component was already initialized
+2026-02-15T05:37:58.915471+00:00 ubuntu gnome-keyring-daemon[2117]: discover_other_daemon: 1
+2026-02-15T05:37:58.956682+00:00 ubuntu gnome-keyring-daemon[2122]: discover_other_daemon: 1
+2026-02-15T05:38:04.186017+00:00 ubuntu polkitd[788]: Registered Authentication Agent for unix-session:2 (system bus name :1.76 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-02-15T05:38:06.365369+00:00 ubuntu gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2026-02-15T05:38:06.493064+00:00 ubuntu systemd-logind[916]: Session c1 logged out. Waiting for processes to exit.
+2026-02-15T05:38:06.520559+00:00 ubuntu systemd-logind[916]: Removed session c1.
+2026-02-15T05:38:06.556151+00:00 ubuntu polkitd[788]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.38, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2026-02-15T05:38:17.269603+00:00 ubuntu (sd-pam): pam_unix(systemd-user:session): session closed for user gdm
+2026-02-15T05:39:10.717464+00:00 ubuntu pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by zooz(uid=1000)
+2026-02-15T05:39:10.728749+00:00 ubuntu pkexec[4238]: zooz: Executing command [USER=root] [TTY=unknown] [CWD=/home/zooz] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-02-15T05:42:00.227913+00:00 ubuntu sudo:     zooz : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/cp /var/log/syslog /home/zooz/fyp/evidence/original/
+2026-02-15T05:42:00.230438+00:00 ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by zooz(uid=1000)
+2026-02-15T05:42:00.239755+00:00 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-02-15T05:42:00.270210+00:00 ubuntu sudo:     zooz : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log /home/zooz/fyp/evidence/original/
+2026-02-15T05:42:00.272828+00:00 ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by zooz(uid=1000)
