@@ -1,166 +1,173 @@
-import os
-import hashlib
 from web3 import Web3
 import json
+import hashlib
+import os
 from datetime import datetime, timezone
 
-# ---------------------------
-# CONFIGURATION
-# ---------------------------
-GANACHE_URL = "http://127.0.0.1:8545"
-CONTRACT_ADDRESS = Web3.to_checksum_address("0xf7bc9cBac9CfadcE25ee5BE9DD278aaf21cb06E2")
-ABI_PATH = "../blockchain/artifacts/contracts/EvidenceRegistry.sol/EvidenceRegistry.json"
-ACCOUNT = "0xab17353592f1CD95Bbe85220eDDe60ff59540a41"
-PRIVATE_KEY = "0xf7997535af098085309cf62b4a9097df50cec101611e92ada2769baf5702d67d"
+# ---------------------------------------
+# 🔗 BLOCKCHAIN CONNECTION
+# ---------------------------------------
 
-# ---------------------------
-# CONNECT TO BLOCKCHAIN
-# ---------------------------
-w3 = Web3(Web3.HTTPProvider(GANACHE_URL))
-if not w3.is_connected():
-    print("❌ Could not connect to Blockchain")
-    exit(1)
+ganache_url = "http://127.0.0.1:8545"
+web3 = Web3(Web3.HTTPProvider(ganache_url))
 
-print("✅ Connected to Blockchain")
+if web3.is_connected():
+    print("✅ Connected to Blockchain")
+else:
+    print("❌ Blockchain connection failed")
+    exit()
 
-with open(ABI_PATH, 'r') as f:
+# ---------------------------------------
+# 🔐 ACCOUNT DETAILS (UPDATE IF NEEDED)
+# ---------------------------------------
+
+account_address = "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1"
+private_key = "0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d"
+
+# ---------------------------------------
+# 📜 LOAD CONTRACT ABI
+# ---------------------------------------
+
+with open("../blockchain/artifacts/contracts/EvidenceRegistry.sol/EvidenceRegistry.json") as f:
     contract_json = json.load(f)
-    contract_abi = contract_json['abi']
+    contract_abi = contract_json["abi"]
 
-contract = w3.eth.contract(address=CONTRACT_ADDRESS, abi=contract_abi)
+# ---------------------------------------
+# 📌 CONTRACT ADDRESS (UPDATE AFTER DEPLOY)
+# ---------------------------------------
+
+contract_address = "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab"
+contract = web3.eth.contract(address=contract_address, abi=contract_abi)
 print("✅ Contract loaded successfully")
 
-# ---------------------------
-# HASHING FUNCTION
-# ---------------------------
-def generate_hash(file_path):
-    with open(file_path, 'rb') as f:
+# ---------------------------------------
+# 🔎 HASH FUNCTION
+# ---------------------------------------
+
+def calculate_hash(file_path):
+    file_path = os.path.expanduser(file_path)
+    if not os.path.exists(file_path):
+        print("❌ File not found.")
+        exit()
+    with open(file_path, "rb") as f:
         return hashlib.sha256(f.read()).hexdigest()
 
-# ---------------------------
-# METADATA FUNCTION
-# ---------------------------
-def get_file_metadata(file_path):
-    stat = os.stat(file_path)
-    return {
-        "size": stat.st_size,
-        "modified_time": datetime.fromtimestamp(stat.st_mtime, timezone.utc)
-    }
+# ---------------------------------------
+# 📝 REGISTER EVIDENCE
+# ---------------------------------------
 
-# ---------------------------
-# FORENSIC CONFIDENCE SCORE
-# ---------------------------
-def calculate_confidence(hash_match, timestamp_valid):
-    score = 0
+def register_evidence(evidence_id, file_hash):
+    nonce = web3.eth.get_transaction_count(account_address)
+    transaction = contract.functions.addEvidence(
+        evidence_id, file_hash
+    ).build_transaction({
+        'from': account_address,
+        'nonce': nonce,
+        'gas': 2000000,
+        'gasPrice': web3.to_wei('50', 'gwei')
+    })
 
-    if hash_match:
-        score += 60
-    if timestamp_valid:
-        score += 40
+    signed_txn = web3.eth.account.sign_transaction(transaction, private_key)
+    tx_hash = web3.eth.send_raw_transaction(signed_txn.raw_transaction)
+    receipt = web3.eth.wait_for_transaction_receipt(tx_hash)
+    print("✅ Evidence registered successfully")
+    print("Transaction Hash:", tx_hash.hex())
 
-    return score
+# ---------------------------------------
+# 🔍 VERIFY LATEST EVIDENCE
+# ---------------------------------------
 
-# ---------------------------
-# REGISTER EVIDENCE
-# ---------------------------
-def register_evidence(file_path, case_id="CASE001"):
-    file_name = os.path.basename(file_path)
-    file_hash = generate_hash(file_path)
+def verify_evidence(evidence_id, current_file_hash):
+    latest = contract.functions.getLatestEvidence(evidence_id).call()
+    blockchain_hash = latest[0]
+    blockchain_timestamp = latest[1]
+    registrant = latest[2]
+    version = latest[3]
 
-    try:
-        nonce = w3.eth.get_transaction_count(ACCOUNT)
+    # Convert timestamp
+    blockchain_time = datetime.fromtimestamp(blockchain_timestamp, tz=timezone.utc)
 
-        tx_hash = contract.functions.storeEvidence(
-            file_name,
-            case_id,
-            file_hash
-        ).transact({
-            'from': ACCOUNT,
-            'nonce': nonce,
-            'gas': 3000000,
-            'gasPrice': w3.to_wei(20, 'gwei')
-        })
+    # Get local file info
+    file_size = os.path.getsize(file_path)
+    file_modified_time = datetime.fromtimestamp(os.path.getmtime(file_path), tz=timezone.utc)
 
-        receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
-
-        block = w3.eth.get_block(receipt['blockNumber'])
-        blockchain_time = datetime.fromtimestamp(block['timestamp'], timezone.utc)
-
-        print("\n🔐 Evidence Registered on Blockchain")
-        print(f"Stored Hash: {file_hash}")
-        print(f"Registrant: {ACCOUNT}")
-        print(f"Blockchain Timestamp: {blockchain_time}")
-        print(f"Transaction Hash: {tx_hash.hex()}")
-
-    except Exception as e:
-        print("❌ Error registering evidence:", e)
-
-# ---------------------------
-# VERIFY EVIDENCE
-# ---------------------------
-def verify_evidence(file_path):
-    file_name = os.path.basename(file_path)
-    current_hash = generate_hash(file_path)
-    metadata = get_file_metadata(file_path)
-
-    try:
-        evidence = contract.functions.getEvidence(file_name).call()
-
-        stored_hash = evidence[2]
-        registrant = evidence[3]
-        blockchain_timestamp = datetime.fromtimestamp(evidence[4], timezone.utc)
-
-        print("\n--- VERIFYING EVIDENCE ---")
-        print(f"Current File Hash : {current_hash}")
-        print(f"Blockchain Hash   : {stored_hash}")
-        print(f"Registrant        : {registrant}")
-        print(f"Blockchain Time   : {blockchain_timestamp}")
-        print(f"File Modified Time: {metadata['modified_time']}")
-        print(f"File Size         : {metadata['size']} bytes")
-
-        # Integrity Check
-        hash_match = (stored_hash == current_hash)
-
-        # Timestamp Check (File modified should NOT be newer than blockchain registration)
-        timestamp_valid = metadata['modified_time'] <= blockchain_timestamp
-
-        # Calculate Score
-        confidence = calculate_confidence(hash_match, timestamp_valid)
-
-        print("\n--- FORENSIC ANALYSIS ---")
-
-        if hash_match:
-            print("✅ Integrity: Hash Match")
+    # Calculate forensic confidence
+    if blockchain_hash == current_file_hash:
+        if file_modified_time <= blockchain_time:
+            confidence = 100
         else:
-            print("❌ Integrity: Hash Mismatch")
-
-        if timestamp_valid:
-            print("✅ Timestamp Consistent")
-        else:
-            print("⚠ File Modified After Blockchain Registration")
-
-        print(f"\n🎯 Forensic Confidence Score: {confidence}%")
-
-        if confidence == 100:
-            print("🔒 Evidence Fully Trusted")
-        elif confidence >= 60:
-            print("⚠ Evidence Partially Trusted")
-        else:
-            print("🚨 Evidence Compromised")
-
-    except Exception as e:
-        print("⚠ Evidence not found or contract call failed:", e)
-
-# ---------------------------
-# MAIN
-# ---------------------------
-if __name__ == "__main__":
-    file_path = "../evidence.txt"
-
-    choice = input("Choose mode:\n1 = Register Evidence\n2 = Verify Evidence\nEnter 1 or 2: ").strip()
-    if choice == "1":
-        register_evidence(file_path)
-    elif choice == "2":
-        verify_evidence(file_path)
+            confidence = 50
     else:
-        print("❌ Invalid choice")
+        confidence = 0
+
+    print("\n--- VERIFYING LATEST EVIDENCE ---")
+    print("Hash Check       :", "✅ Match" if blockchain_hash == current_file_hash else "❌ Mismatch")
+    print("Blockchain Time  :", blockchain_time)
+    print("File Modified    :", file_modified_time)
+    print("Registrant       :", registrant)
+    print("Version          :", version)
+    print("File Size        :", file_size, "bytes")
+    print("🎯 Forensic Score:", f"{confidence}%")
+    print("🔒 Status        :", "Trusted" if confidence >= 50 else "Compromised")
+
+# ---------------------------------------
+# 📜 SHOW HISTORY WITH SCORE
+# ---------------------------------------
+
+def show_history(evidence_id, file_path=None):
+    total_versions = contract.functions.getTotalVersions(evidence_id).call()
+    if total_versions == 0:
+        print("No evidence history found.")
+        return
+
+    print(f"\nTotal Versions: {total_versions}\n")
+
+    # Current file hash for confidence comparison
+    current_hash = calculate_hash(file_path) if file_path else None
+    file_modified_time = datetime.fromtimestamp(os.path.getmtime(file_path), tz=timezone.utc) if file_path else None
+
+    for i in range(1, total_versions + 1):
+        v = contract.functions.getEvidenceVersion(evidence_id, i).call()
+        v_hash, v_timestamp, v_registrant = v[:3]
+        v_time = datetime.fromtimestamp(v_timestamp, tz=timezone.utc)
+
+        # Confidence score
+        if current_hash:
+            if v_hash == current_hash:
+                confidence = 100 if file_modified_time <= v_time else 50
+            else:
+                confidence = 0
+        else:
+            confidence = "N/A"
+
+        print(f"--- Version {i} ---")
+        print("Hash       :", v_hash)
+        print("Timestamp  :", v_time)
+        print("Registrant :", v_registrant)
+        print("Confidence :", f"{confidence}%")
+        print()
+
+# ---------------------------------------
+# 🚀 MAIN
+# ---------------------------------------
+
+if __name__ == "__main__":
+    print("Choose mode:")
+    print("1 = Register Evidence")
+    print("2 = Verify Evidence")
+    print("3 = Show Evidence History")
+
+    choice = input("Enter 1, 2 or 3: ").strip()
+    evidence_id = input("Enter Evidence ID: ").strip()
+    file_path = input("Enter file path: ").strip()
+
+    file_hash = calculate_hash(file_path)
+
+    if choice == "1":
+        register_evidence(evidence_id, file_hash)
+    elif choice == "2":
+        verify_evidence(evidence_id, file_hash)
+    elif choice == "3":
+        show_history(evidence_id, file_path)
+    else:
+        print("Invalid choice.")
