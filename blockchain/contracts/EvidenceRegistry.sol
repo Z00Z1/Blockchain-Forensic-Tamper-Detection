@@ -3,80 +3,129 @@ pragma solidity ^0.8.0;
 
 contract EvidenceRegistry {
 
-    struct EvidenceVersion {
+    struct EvidenceRecord {
         string fileHash;
         uint256 timestamp;
         address registrant;
     }
 
-    // Evidence ID → list of versions
-    mapping(string => EvidenceVersion[]) private evidenceHistory;
+    mapping(uint256 => EvidenceRecord[]) private evidenceHistory;
 
-    event EvidenceAdded(
-        string evidenceId,
-        string fileHash,
-        uint256 timestamp,
-        address registrant,
-        uint256 version
-    );
+    address public admin;
+    mapping(address => bool) public investigators;
 
-    function addEvidence(
-        string memory evidenceId,
-        string memory fileHash
-    ) public {
+    // ========================
+    // EVENTS
+    // ========================
 
-        EvidenceVersion memory newVersion = EvidenceVersion({
-            fileHash: fileHash,
-            timestamp: block.timestamp,
-            registrant: msg.sender
-        });
+    event EvidenceAdded(uint256 indexed evidenceId, uint256 version, address registrant);
+    event InvestigatorAdded(address investigator);
+    event InvestigatorRemoved(address investigator);
 
-        evidenceHistory[evidenceId].push(newVersion);
+    // ========================
+    // MODIFIERS
+    // ========================
 
-        emit EvidenceAdded(
-            evidenceId,
-            fileHash,
-            block.timestamp,
-            msg.sender,
-            evidenceHistory[evidenceId].length
-        );
+    modifier onlyAdmin() {
+        require(msg.sender == admin, "Only admin allowed");
+        _;
     }
 
-    function getLatestEvidence(string memory evidenceId)
+    modifier onlyInvestigator() {
+        require(investigators[msg.sender], "Not authorized investigator");
+        _;
+    }
+
+    // ========================
+    // CONSTRUCTOR
+    // ========================
+
+    constructor() {
+        admin = msg.sender;
+        investigators[msg.sender] = true; // Admin is also investigator
+    }
+
+    // ========================
+    // ROLE MANAGEMENT
+    // ========================
+
+    function addInvestigator(address _investigator) public onlyAdmin {
+
+        require(_investigator != address(0), "Invalid address");
+        require(!investigators[_investigator], "Already investigator");
+
+        investigators[_investigator] = true;
+
+        emit InvestigatorAdded(_investigator);
+    }
+
+    function removeInvestigator(address _investigator) public onlyAdmin {
+
+        require(_investigator != address(0), "Invalid address");
+        require(_investigator != admin, "Cannot remove admin");
+        require(investigators[_investigator], "Not an investigator");
+
+        investigators[_investigator] = false;
+
+        emit InvestigatorRemoved(_investigator);
+    }
+
+    // ========================
+    // EVIDENCE FUNCTIONS
+    // ========================
+
+    function addEvidence(uint256 evidenceId, string memory fileHash)
+        public
+        onlyInvestigator
+    {
+        require(evidenceId > 0, "Invalid evidence ID");
+        require(bytes(fileHash).length > 0, "Invalid hash");
+
+        evidenceHistory[evidenceId].push(
+            EvidenceRecord(fileHash, block.timestamp, msg.sender)
+        );
+
+        uint256 version = evidenceHistory[evidenceId].length;
+
+        emit EvidenceAdded(evidenceId, version, msg.sender);
+    }
+
+    function getLatestEvidence(uint256 evidenceId)
         public
         view
-        returns (
-            string memory fileHash,
-            uint256 timestamp,
-            address registrant,
-            uint256 version
-        )
+        returns (string memory, uint256, address, uint256)
     {
         require(evidenceHistory[evidenceId].length > 0, "No evidence found");
 
         uint256 latestIndex = evidenceHistory[evidenceId].length - 1;
-        EvidenceVersion memory ev = evidenceHistory[evidenceId][latestIndex];
+        EvidenceRecord memory record = evidenceHistory[evidenceId][latestIndex];
 
-        return (ev.fileHash, ev.timestamp, ev.registrant, evidenceHistory[evidenceId].length);
+        return (
+            record.fileHash,
+            record.timestamp,
+            record.registrant,
+            evidenceHistory[evidenceId].length
+        );
     }
 
-    function getEvidenceVersion(string memory evidenceId, uint256 versionIndex)
+    function getEvidenceVersion(uint256 evidenceId, uint256 version)
         public
         view
-        returns (
-            string memory fileHash,
-            uint256 timestamp,
-            address registrant
-        )
+        returns (string memory, uint256, address)
     {
-        require(versionIndex > 0, "Version index starts from 1");
-        require(versionIndex <= evidenceHistory[evidenceId].length, "Invalid version");
+        require(version > 0, "Invalid version");
+        require(version <= evidenceHistory[evidenceId].length, "Version does not exist");
 
-        EvidenceVersion memory ev = evidenceHistory[evidenceId][versionIndex - 1];
-        return (ev.fileHash, ev.timestamp, ev.registrant);
+        EvidenceRecord memory record = evidenceHistory[evidenceId][version - 1];
+
+        return (
+            record.fileHash,
+            record.timestamp,
+            record.registrant
+        );
     }
 
-    function getTotalVersions(string memory evidenceId)
+    function getTotalVersions(uint256 evidenceId)
         public
         view
         returns (uint256)
