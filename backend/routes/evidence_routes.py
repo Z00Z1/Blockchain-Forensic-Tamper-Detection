@@ -8,6 +8,7 @@ from services.blockchain_service import register_evidence_blockchain
 from services.database_service import save_evidence
 from services.blockchain_service import get_latest_evidence
 from services.database_service import get_evidence_by_id
+from services.blockchain_service import get_all_versions
 
 evidence_bp = Blueprint("evidence", __name__)
 
@@ -143,6 +144,45 @@ def verify_evidence():
                 "registrant": record.get("registrant", record.get("registrant_wallet", "unknown")),
                 "version": record["version"]
             }
+        }), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+        
+
+
+@evidence_bp.route("/evidenceHistory", methods=["GET"])
+def evidence_history():
+    try:
+        evidence_id = request.args.get("evidence_id")
+
+        if not evidence_id:
+            return jsonify({"error": "Missing evidence_id"}), 400
+
+        evidence_id = int(evidence_id)
+
+        versions = get_all_versions(evidence_id)
+
+        if not versions:
+            return jsonify({"error": "No history found"}), 404
+
+        formatted = []
+
+        for v in versions:
+            formatted.append({
+                "version": v["version"],
+                "hash": v["file_hash"],
+                "cid": v["cid"],
+                "timestamp": str(datetime.fromtimestamp(
+                    v["timestamp"], tz=timezone.utc
+                )),
+                "registrant": v["registrant"]
+            })
+
+        return jsonify({
+            "evidence_id": evidence_id,
+            "total_versions": len(formatted),
+            "history": formatted
         }), 200
 
     except Exception as e:

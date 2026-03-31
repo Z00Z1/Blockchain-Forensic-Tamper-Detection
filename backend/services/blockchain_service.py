@@ -68,3 +68,46 @@ def get_latest_evidence(evidence_id):
     except Exception as e:
         print(f"[Blockchain ERROR] {e}")
         return None
+        
+
+def get_all_versions(evidence_id):
+    try:
+        total = contract.functions.getTotalVersions(evidence_id).call()
+
+        print("DEBUG total versions:", total)
+
+        versions = []
+
+        # CASE 1: contract supports versions
+        if total > 0:
+            for i in range(1, total + 1):
+                data = contract.functions.getEvidenceVersion(
+                    evidence_id, i
+                ).call()
+
+                versions.append({
+                    "version": i,
+                    "file_hash": data[0],
+                    "cid": data[1],
+                    "timestamp": data[2],
+                    "registrant": data[3]
+                })
+
+        # CASE 2: fallback → only latest evidence exists
+        else:
+            latest = contract.functions.getLatestEvidence(evidence_id).call()
+
+            if latest and latest[0] != "":
+                versions.append({
+                    "version": 1,
+                    "file_hash": latest[0],
+                    "cid": latest[1],
+                    "timestamp": latest[2],
+                    "registrant": latest[3]
+                })
+
+        return versions
+
+    except Exception as e:
+        print(f"[Blockchain ERROR - HISTORY] {e}")
+        return []
