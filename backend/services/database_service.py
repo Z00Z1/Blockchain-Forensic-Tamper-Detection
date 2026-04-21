@@ -69,7 +69,10 @@ def get_evidence_by_id(evidence_id):
     cursor = conn.cursor(dictionary=True)
 
     try:
-        cursor.execute("SELECT * FROM evidences WHERE evidence_id=%s", (evidence_id,))
+        cursor.execute(
+            "SELECT * FROM evidences WHERE evidence_id=%s",
+            (evidence_id,)
+        )
         return cursor.fetchone()
 
     finally:
@@ -130,7 +133,7 @@ def get_case_evidences(case_number):
 
 
 # =========================================
-# 🔥 CHAIN OF CUSTODY (FIXED)
+# 🔥 CHAIN OF CUSTODY
 # =========================================
 def log_custody(evidence_id, action, user, notes=""):
     conn = get_connection()
@@ -143,7 +146,7 @@ def log_custody(evidence_id, action, user, notes=""):
         VALUES (%s, %s, %s, %s)
         """
 
-        cursor.execute(query, (evidence_id, action, user, notes))
+        cursor.execute((query), (evidence_id, action, user, notes))
         conn.commit()
 
     except Exception as e:
@@ -184,14 +187,38 @@ def get_custody_logs(evidence_id):
     finally:
         cursor.close()
         conn.close()
-        
+
+
+# =========================================
+# 🔐 INVESTIGATORS (AUTH SUPPORT)
+# =========================================
 def get_investigator_by_email(email):
     conn = get_connection()
     cursor = conn.cursor(dictionary=True)
 
     try:
-        cursor.execute("SELECT * FROM investigators WHERE email = %s", (email,))
+        cursor.execute(
+            "SELECT * FROM investigators WHERE email = %s",
+            (email,)
+        )
         return cursor.fetchone()
+
+    finally:
+        cursor.close()
+        conn.close()
+
+
+def get_investigator_by_name(name):
+    conn = get_connection()
+    cursor = conn.cursor(dictionary=True)
+
+    try:
+        cursor.execute(
+            "SELECT * FROM investigators WHERE name = %s",
+            (name,)
+        )
+        return cursor.fetchone()
+
     finally:
         cursor.close()
         conn.close()

@@ -76,6 +76,11 @@ def register_evidence():
             f"Evidence added to case {case_id}"
         )
 
+
+        # ✅ delete local file (security improvement)
+        #if os.path.exists(file_path):
+            #os.remove(file_path) 
+
         return jsonify({
             "status": "success",
             "evidence_id": evidence_id,
@@ -115,26 +120,40 @@ def verify_evidence():
             return jsonify({"error": "No evidence found"}), 404
 
         latest = versions[-1]
-
         blockchain_hash = latest["file_hash"].lower().strip()
 
+        # ✅ status logic
         if current_hash == blockchain_hash:
             status = "Trusted"
         else:
             status = "Compromised"
 
         # 🔥 custody logging
+        action = "VERIFIED" if status == "Trusted" else "FAILED_VERIFICATION"
+
         log_custody(
             evidence_id,
-            "VERIFIED" if status == "Trusted" else "FAILED_VERIFICATION",
+            action,
             investigator,
             f"Verification result: {status}"
         )
 
+        # ✅ get latest custody timestamp (FOR FRONTEND)
+        logs = get_custody_logs(evidence_id)
+
+        latest_timestamp = None
+        if logs and len(logs) > 0:
+            latest_timestamp = logs[-1].get("timestamp")
+
+       # ✅ delete local file (security improvement)
+        #if os.path.exists(file_path):
+            #os.remove(file_path)
+
         return jsonify({
             "status": status,
             "hash_match": current_hash == blockchain_hash,
-            "blockchain_hash": blockchain_hash
+            "blockchain_hash": blockchain_hash,
+            "timestamp": str(latest_timestamp) if latest_timestamp else None
         }), 200
 
     except Exception as e:
