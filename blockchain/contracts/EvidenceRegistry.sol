@@ -67,7 +67,6 @@ contract EvidenceRegistry {
     // EVIDENCE FUNCTIONS
     // ========================
 
-    // Updated to accept CID
     function addEvidence(uint256 evidenceId, string memory fileHash, string memory cid)
         public
         onlyInvestigator
