@@ -4,52 +4,37 @@ from utils.jwt_utils import verify_token
 from services.database_service import get_connection
 
 
-
-def get_user_role(username):
-    conn = get_connection()
-    cursor = conn.cursor(dictionary=True)
-
-    cursor.execute(
-        "SELECT role FROM investigators WHERE name = %s",
-        (username,)
-    )
-
-    user = cursor.fetchone()
-
-    cursor.close()
-    conn.close()
-
-    if not user:
-        return None
-
-    return user["role"]
-
-
 def require_role(roles):
     def decorator(f):
         @wraps(f)
         def wrapper(*args, **kwargs):
 
-            auth_header = request.headers.get("Authorization")
+            auth_header = request.headers.get("Authorization", "")
 
             if not auth_header:
-                return jsonify({"error": "Missing token"}), 401
+                return jsonify({"error": "Missing Authorization header"}), 401
 
-            try:
-                token = auth_header.split(" ")[1]
-            except:
-                return jsonify({"error": "Invalid token format"}), 401
+            parts = auth_header.split(" ")
+            if len(parts) != 2 or parts[0].lower() != "bearer":
+                return jsonify({"error": "Invalid token format — expected: Bearer <token>"}), 401
+
+            token = parts[1]
+
+            if not token or token == "null" or token == "undefined":
+                return jsonify({"error": "No token provided — please log in again"}), 401
 
             decoded = verify_token(token)
 
             if not decoded:
-                return jsonify({"error": "Invalid or expired token"}), 401
+                return jsonify({"error": "Token is invalid or expired — please log in again"}), 401
 
-            if decoded["role"] not in roles:
-                return jsonify({"error": "Unauthorized"}), 403
+            user_role = decoded.get("role", "")
+            if user_role not in roles:
+                return jsonify({
+                    "error": f"Access denied. Required: {roles}, your role: {user_role}"
+                }), 403
 
             request.user = decoded
-
             return f(*args, **kwargs)
 
         return wrapper

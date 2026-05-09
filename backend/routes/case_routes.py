@@ -3,7 +3,8 @@ from services.database_service import (
     create_case,
     get_case,
     get_case_evidences,
-    get_custody_logs
+    get_custody_logs,
+    get_all_cases
 )
 from utils.auth_utils import require_role
 case_bp = Blueprint("case", __name__)
@@ -48,7 +49,7 @@ def case_evidences():
     }), 200
 
 
-# 🔥 CASE TIMELINE (MOST IMPORTANT)
+#CASE TIMELINE
 @case_bp.route("/caseTimeline", methods=["GET"])
 def case_timeline():
     try:
@@ -75,6 +76,21 @@ def case_timeline():
         return jsonify({
             "case_number": case_number,
             "timeline": timeline
+        }), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+        
+@case_bp.route("/getAllCases", methods=["GET"])
+@require_role(["admin", "investigator"])
+def get_all_cases_route():
+    try:
+
+        cases = get_all_cases()
+
+        return jsonify({
+            "total": len(cases),
+            "cases": cases
         }), 200
 
     except Exception as e:

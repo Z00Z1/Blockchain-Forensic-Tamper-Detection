@@ -1,6 +1,5 @@
 from flask import Blueprint, request, jsonify
 import os
-from datetime import datetime, timezone
 from utils.hash_utils import calculate_file_hash
 from utils.encryption_utils import encrypt_file
 from services.ipfs_service import upload_to_ipfs
@@ -8,6 +7,7 @@ from services.blockchain_service import register_evidence_blockchain, get_all_ve
 from services.database_service import (
     save_evidence,
     get_evidence_by_id,
+    evidence_exists_in_case,
     log_custody,
     get_custody_logs
 )
@@ -29,25 +29,31 @@ def register_evidence():
         case_id = request.form.get("case_id")
         description = request.form.get("description")
         file = request.files.get("file")
-        investigator = request.form.get("investigator", "unknown")
+
+        #GET USER FROM JWT
+        user = request.user
+        investigator_name = user.get("name", user.get("email", "Unknown"))
+        investigator_wallet = user.get("wallet", "N/A")
+
+        #FORMAT (NAME + WALLET)
+        investigator = f"{investigator_name} ({investigator_wallet})"
 
         if not evidence_id or not case_id or not file:
             return jsonify({"error": "Missing required fields"}), 400
 
         evidence_id = int(evidence_id)
 
+        # ── Check uniqueness: evidence_id must be unique within this case ──
+        if evidence_exists_in_case(evidence_id, case_id):
+            return jsonify({
+                "error": f"Evidence ID {evidence_id} already exists in case '{case_id}'. "
+                         "Each evidence ID must be unique within a case."
+            }), 409
+
         file_path = os.path.join(UPLOAD_FOLDER, file.filename)
         file.save(file_path)
 
         file_hash = calculate_file_hash(file_path)
-
-        previous_versions = get_all_versions(evidence_id)
-
-        if previous_versions:
-            return jsonify({
-                "status": "rejected",
-                "message": "Evidence ID already exists. Use a new evidence_id."
-            }), 400
 
         encrypted_file = encrypt_file(file_path)
         cid = upload_to_ipfs(encrypted_file)
@@ -65,21 +71,16 @@ def register_evidence():
             cid,
             file_hash,
             1,
-            investigator
+            investigator_wallet  # keep wallet in DB
         )
 
-        # 🔥 custody log
+        # custody log
         log_custody(
             evidence_id,
             "REGISTERED",
             investigator,
             f"Evidence added to case {case_id}"
         )
-
-
-        # ✅ delete local file (security improvement)
-        #if os.path.exists(file_path):
-            #os.remove(file_path) 
 
         return jsonify({
             "status": "success",
@@ -100,9 +101,27 @@ def register_evidence():
 @require_role(["investigator", "admin"])
 def verify_evidence():
     try:
+        case_id = request.form.get("case_id")
         evidence_id = request.form.get("evidence_id")
         file = request.files.get("file")
-        investigator = request.form.get("investigator", "unknown")
+        
+        evidence = get_evidence_by_id(evidence_id)
+
+        if not evidence:
+            return jsonify({"error": "No evidence found"}), 404
+
+        
+        if str(evidence["case_id"]) != str(case_id):
+            return jsonify({
+                "error": "Evidence does not belong to this case"
+            }), 400
+
+        #GET USER FROM JWT
+        user = request.user
+        investigator_name = user.get("name", user.get("email", "Unknown"))
+        investigator_wallet = user.get("wallet", "N/A")
+
+        investigator = f"{investigator_name} ({investigator_wallet})"
 
         if not evidence_id or not file:
             return jsonify({"error": "Missing evidence_id or file"}), 400
@@ -122,15 +141,14 @@ def verify_evidence():
         latest = versions[-1]
         blockchain_hash = latest["file_hash"].lower().strip()
 
-        # ✅ status logic
         if current_hash == blockchain_hash:
             status = "Trusted"
         else:
             status = "Compromised"
 
-        # 🔥 custody logging
         action = "VERIFIED" if status == "Trusted" else "FAILED_VERIFICATION"
 
+        #custody log
         log_custody(
             evidence_id,
             action,
@@ -138,16 +156,12 @@ def verify_evidence():
             f"Verification result: {status}"
         )
 
-        # ✅ get latest custody timestamp (FOR FRONTEND)
+        #timestamp for frontend
         logs = get_custody_logs(evidence_id)
 
         latest_timestamp = None
-        if logs and len(logs) > 0:
+        if logs:
             latest_timestamp = logs[-1].get("timestamp")
-
-       # ✅ delete local file (security improvement)
-        #if os.path.exists(file_path):
-            #os.remove(file_path)
 
         return jsonify({
             "status": status,

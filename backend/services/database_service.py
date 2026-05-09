@@ -80,6 +80,27 @@ def get_evidence_by_id(evidence_id):
         conn.close()
 
 
+def evidence_exists_in_case(evidence_id, case_id):
+    """
+    Returns True if an evidence with this ID already exists
+    inside the given case. Used to enforce per-case uniqueness.
+    """
+    conn = get_connection()
+    cursor = conn.cursor()
+
+    try:
+        cursor.execute(
+            "SELECT COUNT(*) FROM evidences WHERE evidence_id=%s AND case_id=%s",
+            (evidence_id, case_id)
+        )
+        (count,) = cursor.fetchone()
+        return count > 0
+
+    finally:
+        cursor.close()
+        conn.close()
+
+
 # =========================================
 # CASE MANAGEMENT
 # =========================================
@@ -133,7 +154,7 @@ def get_case_evidences(case_number):
 
 
 # =========================================
-# 🔥 CHAIN OF CUSTODY
+# CHAIN OF CUSTODY
 # =========================================
 def log_custody(evidence_id, action, user, notes=""):
     conn = get_connection()
@@ -190,7 +211,7 @@ def get_custody_logs(evidence_id):
 
 
 # =========================================
-# 🔐 INVESTIGATORS (AUTH SUPPORT)
+# INVESTIGATORS (AUTH SUPPORT)
 # =========================================
 def get_investigator_by_email(email):
     conn = get_connection()
@@ -219,6 +240,18 @@ def get_investigator_by_name(name):
         )
         return cursor.fetchone()
 
+    finally:
+        cursor.close()
+        conn.close()
+        
+        
+def get_all_cases():
+    conn = get_connection()
+    cursor = conn.cursor(dictionary=True)
+
+    try:
+        cursor.execute("SELECT * FROM cases")
+        return cursor.fetchall()
     finally:
         cursor.close()
         conn.close()

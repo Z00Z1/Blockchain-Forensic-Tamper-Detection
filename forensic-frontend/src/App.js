@@ -1,38 +1,36 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Layout from "./components/Layout";
 
 import RegisterEvidence from "./pages/RegisterEvidence";
 import VerifyEvidence from "./pages/VerifyEvidence";
 import CaseViewer from "./pages/CaseViewer";
 import TimelineViewer from "./pages/TimelineViewer";
-import Dashboard from "./pages/Dashboard"; // ✅ ADD THIS
+import Dashboard from "./pages/Dashboard";
+import AdminDashboard from "./pages/AdminDashboard";
+import CreateCase from "./pages/CreateCase";
 import Login from "./pages/Login";
+import Home from "./pages/Home";
+import ReportGenerator from "./pages/ReportGenerator";
 
 function App() {
   return (
     <Router>
-      <div style={{ padding: "20px" }}>
-        <h1>🔐 Digital Forensic System</h1>
-
-        {/* NAVIGATION */}
-        <div style={{ marginBottom: "20px" }}>
-          <Link to="/login" style={{ marginRight: "10px" }}>Login</Link>
-          <Link to="/" style={{ marginRight: "10px" }}>Register</Link>
-          <Link to="/verify" style={{ marginRight: "10px" }}>Verify</Link>
-          <Link to="/case" style={{ marginRight: "10px" }}>Case Viewer</Link>
-          <Link to="/timeline" style={{ marginRight: "10px" }}>Timeline</Link>
-          <Link to="/dashboard">Dashboard</Link> {/* ✅ ADD THIS */}
-        </div>
-
+      <Layout>
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/" element={<RegisterEvidence />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/register" element={<RegisterEvidence />} />
           <Route path="/verify" element={<VerifyEvidence />} />
           <Route path="/case" element={<CaseViewer />} />
           <Route path="/timeline" element={<TimelineViewer />} />
-          <Route path="/dashboard" element={<Dashboard />} /> {/* ✅ ADD THIS */}
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/create-case" element={<CreateCase />} />
+          <Route path="/report" element={<ReportGenerator />} />
         </Routes>
-      </div>
+      </Layout>
     </Router>
   );
 }
