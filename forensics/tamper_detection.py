@@ -5,64 +5,52 @@ import os
 from datetime import datetime, timezone
 
 # ---------------------------------------
-# 🔗 BLOCKCHAIN CONNECTION
-# ---------------------------------------
+# BLOCKCHAIN CONNECTION
 
 ganache_url = "http://127.0.0.1:8545"
 web3 = Web3(Web3.HTTPProvider(ganache_url))
 
 if web3.is_connected():
-    print("✅ Connected to Blockchain")
+    print("Connected to Blockchain")
 else:
-    print("❌ Blockchain connection failed")
+    print("Blockchain connection failed")
     exit()
 
 # ---------------------------------------
-# 🔐 ACCOUNT DETAILS
-# ---------------------------------------
+# ACCOUNT DETAILS
 
 private_key = "0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d"
 
-# 🔥 Automatically derive address from private key (IMPORTANT FIX)
 account_address = web3.eth.account.from_key(private_key).address
 
 print("🔐 Using Account:", account_address)
 
-# ---------------------------------------
-# 📜 LOAD CONTRACT ABI
-# ---------------------------------------
-
+# LOAD CONTRACT ABI
 with open("../blockchain/artifacts/contracts/EvidenceRegistry.sol/EvidenceRegistry.json") as f:
     contract_json = json.load(f)
     contract_abi = contract_json["abi"]
 
-# ---------------------------------------
-# 📌 CONTRACT ADDRESS
-# ---------------------------------------
-
+# CONTRACT ADDRESS
 contract_address = "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab"
 contract = web3.eth.contract(address=contract_address, abi=contract_abi)
 
-print("✅ Contract loaded successfully")
+print("Contract loaded successfully")
 
 # ---------------------------------------
-# 🔎 HASH FUNCTION
-# ---------------------------------------
+# HASH FUNCTION
 
 def calculate_hash(file_path):
     file_path = os.path.expanduser(file_path)
 
     if not os.path.exists(file_path):
-        print("❌ File not found.")
+        print("File not found.")
         exit()
 
     with open(file_path, "rb") as f:
         return hashlib.sha256(f.read()).hexdigest()
 
-# ---------------------------------------
-# 📝 REGISTER EVIDENCE
-# ---------------------------------------
-
+#------------------------------------------------------------
+# REGISTER EVIDENCE
 def register_evidence(evidence_id, file_hash):
 
     nonce = web3.eth.get_transaction_count(account_address)
@@ -82,12 +70,11 @@ def register_evidence(evidence_id, file_hash):
     tx_hash = web3.eth.send_raw_transaction(signed_txn.raw_transaction)
     receipt = web3.eth.wait_for_transaction_receipt(tx_hash)
 
-    print("✅ Evidence registered successfully")
+    print("Evidence registered successfully")
     print("Transaction Hash:", tx_hash.hex())
 
-# ---------------------------------------
-# 🔍 VERIFY LATEST EVIDENCE
-# ---------------------------------------
+# -------------------------------------
+# VERIFY LATEST EVIDENCE
 
 def verify_evidence(evidence_id, file_path):
 
@@ -117,18 +104,17 @@ def verify_evidence(evidence_id, file_path):
         confidence = 0
 
     print("\n--- VERIFYING LATEST EVIDENCE ---")
-    print("Hash Check       :", "✅ Match" if blockchain_hash == current_file_hash else "❌ Mismatch")
+    print("Hash Check       :", "Match" if blockchain_hash == current_file_hash else "Mismatch")
     print("Blockchain Time  :", blockchain_time)
     print("File Modified    :", file_modified_time)
     print("Registrant       :", registrant)
     print("Version          :", version)
     print("File Size        :", file_size, "bytes")
-    print("🎯 Forensic Score:", f"{confidence}%")
-    print("🔒 Status        :", "Trusted" if confidence >= 50 else "Compromised")
+    print("Forensic Score:", f"{confidence}%")
+    print("Status        :", "Trusted" if confidence >= 50 else "Compromised")
 
 # ---------------------------------------
-# 📜 SHOW HISTORY WITH SCORE
-# ---------------------------------------
+# SHOW HISTORY WITH SCORE
 
 def show_history(evidence_id, file_path):
 
@@ -169,7 +155,7 @@ def show_history(evidence_id, file_path):
         print()
 
 # ---------------------------------------
-# 🚀 MAIN
+#  MAIN
 # ---------------------------------------
 
 if __name__ == "__main__":
