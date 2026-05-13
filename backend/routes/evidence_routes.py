@@ -98,7 +98,7 @@ def register_evidence():
 # VERIFY EVIDENCE
 # =========================================================
 @evidence_bp.route("/verifyEvidence", methods=["POST"])
-@require_role(["investigator", "admin"])
+@require_role(["investigator"])
 def verify_evidence():
     try:
         case_id = request.form.get("case_id")
