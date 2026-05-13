@@ -22,7 +22,7 @@ UPLOAD_FOLDER = "uploads"
 # REGISTER EVIDENCE
 # =========================================================
 @evidence_bp.route("/registerEvidence", methods=["POST"])
-@require_role(["investigator", "admin"])
+@require_role(["investigator"])
 def register_evidence():
     try:
         evidence_id = request.form.get("evidence_id")
